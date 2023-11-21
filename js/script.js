@@ -645,23 +645,32 @@ console.log(user.personalInfo.address); */
 // CALL, APPLY, BIND
 
 // CALL: we have just made one function and we we are calling that function with different object. Just with the help of CALL keyWord.
-const user1 = {
-  name: "Jatin",
-  proffession: "software developer",
-  age: 20,
-  interest: "playing cricket",
-}
-function print(live){
-  return console.log(this.name +" " +live);
-}
-print.call(user1, ["Delhi", "India"]);
+// const user1 = {
+//   name: "Jatin",
+//   proffession: "software developer",
+//   age: 20,
+//   interest: "playing cricket",
+// }
+// function print(city, country, func){
+//   return console.log(this.name +" " +city+" " +country+" " +func
+//   );
+// }
+// print.call(user1, "Delhi", "India", "callFunc");
 
-const user2 = {
-  name: "Virat",
-  proffession: " Indian Cricketer",
-  age: 35,
-  interest: "business",
-}
+// const user2 = {
+//   name: "Virat",
+//   proffession: " Indian Cricketer",
+//   age: 35,
+//   interest: "business",
+// }
 
-// APPLY: you can use sqaure bracket and write more things and use only one parameter.
-print.call(user2, ["Delhi", "India"]);
+// print.call(user2, "Delhi", "India", "callFunc");
+
+// // APPLY: you can use many arguments as an array list. 
+// print.apply(user2, ["Delhi", "India", "applyFunc"]);
+
+// // BIND : bind is same as call but here you just have to make a copy the result and invoke later.
+// let newFun = print.bind(user2, "Delhi", "India", "BindFunc");
+// newFun();
+
+// print.call(user2, ["Delhi", "India", "callFunc"]); // you can also you (call and bind) method like this just put the arguments in array bracket and only use one parameter.
