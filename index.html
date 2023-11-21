@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tutorial</title>
+
+    <style>
+        body{
+            background-color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <H1>Js.tutotrial</H1>
+<!-- <ul>
+    <li id="believe"></li>
+    <li id="fame">virat</li>
+    <li>kane</li>
+</ul>
+
+
+ select element by id 
+<script>
+    let elm = document.getElementById('believe').innerHTML="Jatin";
+</script>
+
+
+<script>
+    let elt = document.getElementById('fame');
+    console.log(elt.innerHTML);
+    let change = elt.innerHTML = "boss"
+</script> -->
+
+<!-- - how to change 
+
+<script>
+    let cng = document.getElementById('fame');
+    cng.outerHTML = '<h3> century </h3>'
+</script> -->
+
+
+
+<!-- using mouse events -->
+
+<!-- <button type="submit" id="box" onClick="fun()">Event</button>
+
+    <script>
+        function fun(){
+            alert('clicked event'); 
+        }  
+    </script> -->
+
+
+    <!-- <button id="box" oncontextmenu="fun()">Button</button>  
+
+    <script>
+        function fun(){
+            alert(' right event  clicked'); 
+        }
+    </script>  -->
+
+
+
+    <!-- <button id="box" ondblclick="fun()">button</button>       
+
+    <script>
+        function fun(){
+            alert('double event clicked'); 
+        }
+    </script>  -->
+
+  
+
+
+    <!-- keydown event -->
+  <!-- <script>
+
+    window.addEventListener('keydown', checkkey);
+
+    function checkkey(event){
+        console.log(event.key);
+    }
+
+  </script> -->
+  
+
+  
+  
+  <!-- scrool event -->
+
+   <!-- <script>
+    window.addEventListener('wheel', function(evt){
+        if(event.deltaY < 0){
+            console.log('scrolling up....')
+        }else if(event.deltaY > 0){
+            console.log('scrolling down....')
+        }
+
+
+    });
+  </script>  -->
+   
+  
+
+
+
+
+  <!-- input events -->
+  
+  <!-- <form action="">
+    <input type="text" id="myinput">
+
+
+  </form>
+
+  <script>
+         let x = document.getElementById('myinput');
+
+         x.addEventListener('focus', myFocusFunction);
+         x.addEventListener('blur', myBlurFunction);
+
+         function myFocusFunction(){
+            x.style.background="gray";
+
+         }
+
+         function myBlurFunction(){
+            x.style.background="white";
+
+         }       
+
+  </script> -->
+
+  
+
+
+
+
+<!-- to get window height & width -->
+
+
+<!-- <script>
+    console.log(window.outerHeight);   // for body height & width.
+    console.log(window.outerWidth);
+
+
+</script> -->
+  
+
+
+<!-- <script>
+    console.log(window.outerHeight);   // for full browser height & width.
+    console.log(window.outerWidth);
+
+
+</script> -->
+  
+  
+
+
+   <!-- open new window -->
+
+   <!-- <button id="btn1">google</button>
+   <button id="btn2">yahoo</button>
+   <button id="btn3">close</button>
+
+
+   <script>
+          let btn1 = document.getElementById("btn1");
+          let btn2 = document.getElementById("btn2");
+          let btn3 = document.getElementById("btn3");
+
+          let url = "https://www.google.com";
+          let url2 = 'https://www.yahoo.com';
+          let features = "height=500,width=800";
+          let win;
+
+          btn1.addEventListener('click', function(){
+            win = window.open(url, 'google', features);
+
+          });
+
+          btn2.addEventListener('click', function(){
+            window.open(url2, 'google');
+
+          });
+
+          btn3.addEventListener('click', function(){
+            win.close();
+
+          });
+
+
+   </script> -->
+
+
+  
+  
+  <!-- navigator -->
+
+  <!-- <script>
+    console.log(navigator.appCodeName) //for getting information.
+  </script> -->
+
+
+
+
+
+  <!-- basics again -->
+  <!-- how to select element by id. -->
+
+
+  <!-- <ul>
+    <li>list 1</li>
+    <li id="first">list 2</li>
+    <li>list 3</li>
+  </ul>
+
+<script>
+
+  let elm = document.getElementById('first');
+  console.log(elm.outerHTML);
+//   elm.outerHTML='jatin singh';
+
+</script> -->
+
+
+
+<!-- how to select element by class. -->
+
+ <!-- <ul>
+    <li class="cls">list 1</li>
+    <li id="first">list 2</li>
+    <li class="cls">list 3</li>
+  </ul>
+  
+  <script>
+    let cl = document.getElementsByClassName('cls');
+   
+    for( let i=0; i < cl.length; i++ ){
+        cl[i].innerHTML='win';
+
+    }
+  </script>  -->
+ 
+
+
+  <!-- how to select element by tag. -->
+
+  <!-- <h2>heading 1</h2>
+<div id="di">
+  <p>paragraph 1</p>
+  <h2>heading 2</h2>
+  <p>paragraph 2</p>
+  <h2>heading 3</h2>
+  <p>paragraph 3</p>
+</div>
+
+  <script>
+    let div = document.getElementById('di')
+    let tag = div.getElementsByTagName('h2');
+    for(let i = 0; i<tag.length; i++){
+        tag[i].outerHTML='hello baby';
+    };
+  </script> -->
+
+
+
+  <!-- query selector -->
+
+  <!-- <h2 class="intro">heading 1</h2>
+<div id="di">
+  <p class="intro">paragraph 1</p>
+  <h2 id="intro">heading 2</h2>
+  <p >paragraph 2</p>
+  <h2>heading 3</h2>
+  <p class="intro">paragraph 3</p>
+</div>
+
+<script>
+  let elm = document.querySelectorAll('p.intro');
+  for(let i = 0; i<elm.length; i++){
+       elm[i].innerHTML='hello baby';
+  };
+</script> -->
+ 
+
+<!-- <button id="btn" onclick="btnclick()">button</button>
+
+<script>
+  function btnclick(){
+  alert('you  clicked');
+  }
+
+  let elm= document.getElementById('btn');
+
+  elm.addEventListener('click', function btnclick(){
+    alert ("you clicked baby")
+  });
+</script> -->
+
+
+
+
+<!-- focus and blur function -->
+
+<!-- <form action="">
+  <input type="text" id="myinput">
+</form>
+
+
+<script>
+  let x = document.getElementById('myinput');
+
+  x.addEventListener('focus', myfocusevent);
+  x.addEventListener('blur',myblurevent);
+  // x.addEventListener('change' , function(){
+  //   console.log(this.value);
+  // });
+  x.addEventListener('input', function(){
+    console.log(this.value);
+  });
+
+
+
+
+  function myfocusevent(){
+    x.style.backgroundColor="lightgrey";
+  };
+
+  function myblurevent(){
+    x.style.backgroundColor="lightblue";
+  };
+
+</script> -->
+
+
+<!-- <form action="" id="myform">
+  <input type="text">
+  <input type="submit">
+</form>
+
+
+<script>
+       let form = document.getElementById('myform');
+       form.addEventListener('submit', function(event){
+              event.preventDefault();  
+       });
+</script> -->
+
+
+
+<!-- <button id="btn">Tradingview.com</button>
+
+<script>
+         let btn1 = document.getElementById("btn");
+         let url = "https://www.tradingview.com/chart/XV3mO0tO/";
+         let feature = "height=500, width=1000"
+
+         btn1.addEventListener("click",() => {
+          window.open(url,name,feature);
+         })
+</script> -->
+
+
+<!-- <script>
+  let = 'call';
+  console.log('hello world');
+</script> -->
+
+
+
+<!-- MAP FUNCTION (650 - 673) IN SCRIPT.JS -->
+
+<!-- <ul>
+  <li id="map"></li>
+</ul> -->
+
+
+
+ <!-- <h1>Making Form</h1>
+
+<form id="fullForm"> 
+  <label>Name: </label>
+  <input type="text" placeholder="enter your name" name="Name"/>
+   <br/>
+
+   <label>Email: </label>
+   <input type="email" name="email" placeholder="email"/>
+   <br/>
+
+  <label>Country: </label>
+  <input type="text" placeholder="Country Name" name="country"/>
+  <br/>
+  
+  <label>Interest: </label>
+  <input type="text" placeholder="your Interest" name="interest"/>
+  <br/>
+
+  <label>DOB: </label>
+  <input type="date" name="dob" placeholder="dob"/>
+  <br/>
+
+  <p>Select your 12th grade</p>
+  
+  <input id="a+" type="radio" name="grade" value="A+"/>
+  <label for="a+">A+</label>
+  <br/>
+
+  <input id="b+" type="radio" name="grade" value="B+"/>
+  <label for="b+">B+</label>
+  <br/>
+
+  <input id="c+" type="radio" name="grade" value="C"/>
+  <label for="c+">C</label>
+  <br/>
+
+  <label for="cars">your favourite car</label>
+  <select name="car" id="cars">
+    <option value="maclaren">Maclaren</option>
+    <option value="bugatti">Bugatti</option>
+    <option value="G-wagon">G-wagon</option>
+    <option value="Audi">Audi</option>
+  </select>
+  <br/><br/>
+
+  <textarea placeholder="your feedback please"></textarea>
+  <br/>
+
+  <input type="submit"/>
+
+</form> 
+
+ <script>
+  let form = document.getElementById("fullForm")
+  form.addEventListener("click", (e)=>{
+     e.preventDefault();
+  })
+</script> -->
+
+
+
+<!-- <button type="button" id="bttn">click</button>
+<p class="result"></p>
+
+<script>
+  const result = document.querySelector(".result");
+  let butt = document.getElementById("bttn");
+  let clickedButton = 0;
+
+  butt.addEventListener( "click" ,()=>{
+    clickedButton++;
+    result.textContent = `you clicked ${clickedButton} times.`
+  })
+</script> -->
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
