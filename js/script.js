@@ -674,3 +674,35 @@ console.log(user.personalInfo.address); */
 // newFun();
 
 // print.call(user2, ["Delhi", "India", "callFunc"]); // you can also you (call and bind) method like this just put the arguments in array bracket and only use one parameter.
+
+
+// setTimeout and setInterval
+// settimeout runs only once after the given time.
+// setinterval runs again & again after given time.
+
+
+// console.log("first");
+
+// setTimeout(()=>{
+//     console.log("second line");
+// }, 1000);
+// setTimeout(()=>{
+//     console.log("third line");
+// }, 2000);
+
+// console.log("fourth line")
+// setTimeout(function(){
+//     console.log("fifth line");
+// }, 500);
+
+// console.log("sixth line");
+
+
+// setInterval(function(){
+//     console.log("I'm setInterval")
+// },1000)
+    
+// let setinter = function(i){
+//     console.log("function for setInterval" + i)
+// };
+// setInterval(setinter , 1000, 3);
