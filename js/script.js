@@ -626,7 +626,7 @@ console.log(user.personalInfo.address); */
 //         getSumTwo: function(){
 //         return a + b ;
 //       },
-//       getSumThree: function(){
+//       getSumThree: function(){ 
 //         return a+b+c;
 //       },
 //       getSumFour: function(z){
@@ -640,6 +640,40 @@ console.log(user.personalInfo.address); */
 // console.log(str.getSumThree());
 // console.log(str.getSumFour(9));
 
+
+// function callApi(method){
+//     return function(url){
+//         console.log(`we are using ${method} and fetching ${url}`);
+//     }
+//   }
+//   const store = callApi("GET");
+//   store("https://example.com/api");
+
+
+//   function cartCounter(){
+//     let count = 0;
+//     function updateCount(val){
+//         count += val;
+//     }
+
+//     return{
+//         increment(){
+//            updateCount(1);
+//         },
+//         decrement(){
+//            updateCount(-1);
+//         },
+//         value(){
+//            return count;
+//         },
+//     }
+//   }
+//   const store = cartCounter();
+//   store.increment();
+//   store.increment();
+//   store.increment();
+//   store.decrement();
+//   console.log(store.value())
 
 
 // CALL, APPLY, BIND
