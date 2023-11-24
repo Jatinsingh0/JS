@@ -740,3 +740,43 @@ console.log(user.personalInfo.address); */
 //     console.log("function for setInterval" + i)
 // };
 // setInterval(setinter , 1000, 3);
+
+
+
+// FUNCTIONAL Programming
+
+// In js we can assign a function to a variable.
+// const func = function(){ 
+//     console.log("assign a function to a variable.");
+//     return {
+//          rdds(){
+//         console.log("dcnks")
+//         },
+//         edds(){
+//         console.log("dcnsabkxsks")
+//     }
+// }
+// }
+// const hh = func(); //func is not a object it is function. that's why we need to invoke func first to get the object, and then call rdds.
+// hh.rdds();
+
+
+// Pass a Function as an Argument.
+// -since functions are first class citizens in javascript, we are able to pass them as an argument.
+// const func1 = function(){
+//     return "i'm a first function";
+// };
+// const func2 = function(fun){
+//     console.log(fun, "But we are in second function.");
+// };
+// func2(func1());
+
+
+// Returning a Function.
+// -this is the key concept when it comes to function progamming.
+// const func3 = () => {
+//     return function(){
+//         console.log("returning function");
+//     }
+// };
+// func3()();
