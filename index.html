@@ -9,6 +9,7 @@
     <style>
         body{
             background-color: white;
+            height: 5003px;
         }
 
 
@@ -444,8 +445,7 @@
 </script> -->
 
 
-
-<button type="button" id="bttn">click</button>
+<!-- <button type="button" id="bttn">click</button>
 <p class="result"></p>
 
 <script>
@@ -455,10 +455,80 @@
 
   butt.addEventListener( "click" ,()=>{
     clickedButton++;
-    result.textContent = `you clicked ${clickedButton} times.`
+    result.innerHTML = `you clicked ${clickedButton} times.`
   })
- 
+</script> -->
+
+
+<body onscroll="showCount()">
+  <p class="n_count">Normal Count</p>
+  <p class="t_count">Throttle Count</p>
+  <p class="d_count">Debounce Count</p>
+
+
+<script>
+  const normalTag = document.querySelector(".n_count");
+  const throttleTag = document.querySelector(".t_count");
+  const debounceTag = document.querySelector(".d_count");
+  let nrCnt = 0;
+  let thtlCnt = 0;
+  let dbucCnt = 0;
+  let isScrolling = true;
+
+  const normalCount = () => {
+    nrCnt++;
+    normalTag.innerHTML = `Normal Count: ${nrCnt}`
+  };
+
+  const throttleCount = () => {
+      if(isScrolling == true){
+        thtlCnt++
+         throttleTag.innerHTML = `Throttle Count: ${thtlCnt}`;
+         isScrolling = false;
+         setTimeout(()=> {
+          isScrolling = true;
+         }, 1000)
+      }
+  };
+
+  let interval;
+  const debounceCount = () => {
+     clearTimeout(interval);
+
+     interval = setTimeout(()=>{
+      dbucCnt++;
+      debounceTag.innerHTML = `Debounce Count: ${dbucCnt}`;
+     }, 1000);
+  };
+  
+  const showCount = () => {
+     normalCount();
+     throttleCount();
+     debounceCount();
+  };
 </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="js/script.js"></script>

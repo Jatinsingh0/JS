@@ -605,13 +605,16 @@ console.log(user.personalInfo.address); */
 // }
 
 
-// Closure: it means we can retain the values from the first function after call the function. the values would not lost. but in other languages we can not use the value again after function call.
+// Closure: 
+// closure is created when a function is defined inside another function (the outer function),
+// and the inner function has access to variables from the outer function, even after the outer function has finished executing.
+
 
 // let sum = function(a){
 //     console.log("Jatin is learning " + a);
 //     let c = "react.js";
 //     return function(b){
-//          return a+b+c           // using first function output (a) here. Using (a) second time. and the access of a and c again called lexical scope.
+//          return a+b+c           // using outer function output (a) here. Using (a) second time. and the access of a and c again called lexical scope.
 //     }
 // }
 // let store = sum("javascript");
@@ -621,7 +624,7 @@ console.log(user.personalInfo.address); */
 
 // let sum2 = function(a, b, c){
 //     console.log(a+ b+ c);
-
+ 
 //     return {
 //         getSumTwo: function(){
 //         return a + b ;
@@ -685,11 +688,11 @@ console.log(user.personalInfo.address); */
 //   age: 20,
 //   interest: "playing cricket",
 // }
-// function print(city, country, func){
-//   return console.log(this.name +" " +city+" " +country+" " +func
+// function print(city, country, method){
+//   return console.log(this.name +" " +city+" " +country+" " +method
 //   );
 // }
-// print.call(user1, "Delhi", "India", "callFunc");
+// print.call(user1, "Delhi", "India", "callMethod");
 
 // const user2 = {
 //   name: "Virat",
@@ -698,21 +701,21 @@ console.log(user.personalInfo.address); */
 //   interest: "business",
 // }
 
-// print.call(user2, "Delhi", "India", "callFunc");
+// print.call(user2, "Delhi", "India", "callMethod");
 
-// // APPLY: you can use many arguments as an array list. 
-// print.apply(user2, ["Delhi", "India", "applyFunc"]);
+// // APPLY: you can use many arguments as an array list. but You must have to use Array list in Apply method otherwise method shows you error. 
+// print.apply(user2, ["Delhi", "India", "applyMethod"]);
 
 // // BIND : bind is same as call but here you just have to make a copy the result and invoke later.
-// let newFun = print.bind(user2, "Delhi", "India", "BindFunc");
+// let newFun = print.bind(user2, "Delhi", "India", "BindMethod");
 // newFun();
 
-// print.call(user2, ["Delhi", "India", "callFunc"]); // you can also you (call and bind) method like this just put the arguments in array bracket and only use one parameter.
+// print.call(user2, ["Delhi", "India", "callMethod"]); // you can also you (call and bind) method like this just put the arguments in array bracket and only use one parameter.
 
 
 // setTimeout and setInterval
 // settimeout runs only once after the given time.
-// setinterval runs again & again after given time.
+// setinterval runs again & again after the given time.
 
 
 // console.log("first");
@@ -780,3 +783,24 @@ console.log(user.personalInfo.address); */
 //     }
 // };
 // func3()();
+
+
+// just a problem trying to solve.
+// for(var i = 0; i<3; i++){
+//   setTimeout(function(){
+//     console.log(i)
+//   }(), 1000)        // IIFE (Immediately Invoked Function Expression)
+// }; 
+
+// The for loop runs quickly, and all three setTimeout functions are set up almost simultaneously.
+
+// The setTimeout functions capture the variable i from the outer scope. But they don't capture the current value of i at the time setTimeout is called; they capture a reference to the variable.
+
+// By the time the setTimeout functions execute (after a delay of 1000 milliseconds), the loop has finished, and the value of i is 3.
+
+// So, all three console.log(i) statements print the current value of i, which is 3.
+// for(var a = 0; a<3; a++){
+//     setTimeout(function(){
+//       console.log(a)
+//     }, 1000)
+//   };
