@@ -460,7 +460,9 @@
 </script> -->
 
 
-<body onscroll="showCount()">
+<!-- Debouncing and throttling-->
+
+<!-- <body onscroll="showCount()">
   <p class="n_count">Normal Count</p>
   <p class="t_count">Throttle Count</p>
   <p class="d_count">Debounce Count</p>
@@ -507,8 +509,51 @@
      debounceCount();
   };
 </script>
-</body>
+</body> -->
 
+
+<button type="button" class="btn">click</button>
+<h3 class="text"></h3>
+<p class="debounce"></p>
+<p class="throttle"></p>
+
+<script>
+  const btnn = document.querySelector(".btn");
+  const textt =  document.querySelector(".text");
+  const dbnc = document.querySelector(".debounce");
+  const thrott = document.querySelector(".throttle") 
+  let plus = 0;
+  let debouncee = 0;
+  let throttlee = 0;
+
+
+  btnn.addEventListener("click", ()=>{
+    plus++;
+    textt.innerHTML = `You Clicked ${plus} times.`
+  })
+
+  let interval;
+  btnn.addEventListener("click", ()=>{
+    clearTimeout(interval);
+    interval = setTimeout(() => {
+      debouncee++;
+      dbnc.innerHTML = `debounce triggered ${debouncee} times.`
+    }, 1000);
+  })
+
+  let clicking = true;
+  btnn.addEventListener("click",()=>{
+    if(clicking == true){
+        throttlee++;
+        thrott.innerHTML = `throttle triggered ${throttlee} times.`;
+        clicking = false;
+        setTimeout(()=>{
+          clicking = true;
+        }, 1000)
+    };
+  });
+
+</script>
 
 
 
