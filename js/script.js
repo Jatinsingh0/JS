@@ -808,14 +808,17 @@ console.log(user.personalInfo.address); */
 
 
 // "this" KEYWORD
+// The value of "this" is not fixed; it depends on the way a function is invoked. Here are some common scenarios:
 
 // situation 1
 console.log(this);
+
 // situation 2
 function log(){
-    console.log(this);
+    console.log(this)
 }
 log();
+
 // situation 3
 let user1 = {
     firstName: "Jatin",
@@ -844,3 +847,21 @@ let user2 = {
 }
 let copy = user2.printFullName;
 copy();
+
+// situation 6
+// Arrow functions behave differently regarding this. They inherit the this value from the surrounding scope and do not have their own this. This can be useful in avoiding the confusion of traditional function scoping.
+
+let trying = {
+    name: "Jatin",
+     myArrowFunction: function(){
+        console.log(this.name);
+        
+        const nextArrow = () => {
+           console.log(this)
+        }
+        nextArrow();
+      }
+
+}
+trying.myArrowFunction()
+  
