@@ -804,3 +804,43 @@ console.log(user.personalInfo.address); */
 //       console.log(a)
 //     }, 1000)
 //   };
+
+
+
+// "this" KEYWORD
+
+// situation 1
+console.log(this);
+// situation 2
+function log(){
+    console.log(this);
+}
+log();
+// situation 3
+let user1 = {
+    firstName: "Jatin",
+    lastName: "singh",
+    printFullName: function(){
+        console.log(this)
+    }
+}
+user1.printFullName();
+
+// situation 4
+
+function user(name, age){
+    console.log(this);
+}
+
+const cnstrtrFunction = new user("Jatin", 20);
+
+// situation 5
+let user2 = {
+    firstName: "Jatin",
+    lastName: "singh",
+    printFullName: function(){
+        console.log(this)
+    },
+}
+let copy = user2.printFullName;
+copy();
