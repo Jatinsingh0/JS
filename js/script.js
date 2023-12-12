@@ -651,7 +651,7 @@ console.log(user.personalInfo.address); */
 //   }
 //   const store = callApi("GET");
 //   store("https://example.com/api");
-
+   
 
 //   function cartCounter(){
 //     let count = 0;
@@ -811,57 +811,89 @@ console.log(user.personalInfo.address); */
 // The value of "this" is not fixed; it depends on the way a function is invoked. Here are some common scenarios:
 
 // situation 1
-console.log(this);
+// console.log(this);
 
 // situation 2
-function log(){
-    console.log(this)
-}
-log();
+// function log(){
+//     console.log(this)
+// }
+// log();
 
 // situation 3
-let user1 = {
-    firstName: "Jatin",
-    lastName: "singh",
-    printFullName: function(){
-        console.log(this)
-    }
-}
-user1.printFullName();
+// let user1 = {
+//     firstName: "Jatin",
+//     lastName: "singh",
+//     printFullName: function(){
+//         console.log(this)
+//     }
+// }
+// user1.printFullName();
 
 // situation 4
 
-function user(name, age){
-    console.log(this);
-}
+// function user(name, age){
+//     console.log(this);
+// }
 
-const cnstrtrFunction = new user("Jatin", 20);
+// const cnstrtrFunction = new user("Jatin", 20);
 
 // situation 5
-let user2 = {
-    firstName: "Jatin",
-    lastName: "singh",
-    printFullName: function(){
-        console.log(this)
-    },
-}
-let copy = user2.printFullName;
-copy();
+// let user2 = {
+//     firstName: "Jatin",
+//     lastName: "singh",
+//     printFullName: function(){
+//         console.log(this)
+//     },
+// }
+// let copy = user2.printFullName;
+// copy();
 
 // situation 6
 // Arrow functions behave differently regarding this. They inherit the this value from the surrounding scope and do not have their own this. This can be useful in avoiding the confusion of traditional function scoping.
 
-let trying = {
-    name: "Jatin",
-     myArrowFunction: function(){
-        console.log(this.name);
+// let trying = {
+//     name: "Jatin",
+//      myArrowFunction: function(){
+//         console.log(this.name);
         
-        const nextArrow = () => {
-           console.log(this)
-        }
-        nextArrow();
-      }
+//         const nextArrow = () => {
+//            console.log(this)
+//         }
+//         nextArrow();
+//       }
 
-}
-trying.myArrowFunction()
+// }
+// trying.myArrowFunction()
   
+
+// Find duplicate numbers?
+// const arry = [1,2,3,4,5,2,4,6,7,8,9,6,7];
+// const findDuplicate = arry.filter((value,index,array) => array.indexOf(value) !== index);
+// console.log(findDuplicate);
+
+
+// Find the MAX and Min value in array?
+// const arry = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+// const maxNumber = Math.max(...arry)
+// console.log(maxNumber);
+
+// USING REDUCE METHOD FOR MAXVALUE.
+// const arry3 = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+// const maxNumberUsingReduceMethod = arry3.reduce((max, curElement) => (curElement > max ? curElement : max ), arry3[0])
+// console.log(maxNumberUsingReduceMethod);
+
+// const arry2 = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+// const minNumber = Math.min(...arry2)
+// console.log(minNumber);
+
+
+// const arry4 = [21,32,93,34,56,42,43,66,72,95,69,86,97];
+// const maxNumber = Math.max(...arry4)
+// const indexNumberOfMaxVal = arry4.indexOf(maxNumber)
+// const aplice = arry4.splice(indexNumberOfMaxVal)
+// console.log(indexNumberOfMaxVal);
+
+const array = [1, 2, 3, 4, 5];
+array.splice(2, 2, 6, 7);
+
+console.log(array); 
