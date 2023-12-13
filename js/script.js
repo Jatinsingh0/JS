@@ -355,13 +355,12 @@ console.log(user.personalInfo.address); */
 // }
 
 // Argument object
-
 // function add(){
 //     if(arguments.length===0){
 //         console.log("No argument passed")
 
 //     }else{
-//         sum=0;
+//         let sum=0;
 //         for(let i = 0; i<arguments.length; i++){
 //             sum = sum + arguments[i];
 //         }
@@ -931,16 +930,29 @@ console.log(user.personalInfo.address); */
 
 // FIND EVEN AND ODD NUMBERS IN GIVEN ARRAY.
   
-const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
-    const even = numbers.filter((curVal)=> {
-       return curVal%2 === 0;
-    })
-    console.log(`Even Numbers: ${even}`);
+// const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+//     const even = numbers.filter((curVal)=> {
+//        return curVal%2 === 0;
+//     })
+//     console.log(`Even Numbers: ${even}`);
 
-    const odd = numbers.filter((curVal)=> {
-        return curVal%2 === 1;
-     })
-     console.log(`Odd Numbers: ${odd}`);
+//     const odd = numbers.filter((curVal)=> {
+//         return curVal%2 === 1;
+//      })
+//      console.log(`Odd Numbers: ${odd}`);
+
+
+
+// FINDING SUM OF ALL ELEMENTS
+// const numbers2 = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+// const sum = (curElm) => {
+//     const sumOfElements = curElm.reduce((previous, curElement)=>{
+//        return previous + curElement
+//     }, curElm[0])
+//     console.log(sumOfElements);
+//  }
+//  sum(numbers2);
+
 
 
 
