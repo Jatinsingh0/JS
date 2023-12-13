@@ -887,13 +887,61 @@ console.log(user.personalInfo.address); */
 // console.log(minNumber);
 
 
+
+// FINDING SECOND LARGEST VALUE
 // const arry4 = [21,32,93,34,56,42,43,66,72,95,69,86,97];
 // const maxNumber = Math.max(...arry4)
-// const indexNumberOfMaxVal = arry4.indexOf(maxNumber)
-// const aplice = arry4.splice(indexNumberOfMaxVal)
-// console.log(indexNumberOfMaxVal);
+// console.log(maxNumber);
+// const indexNumberOfMaxVal = arry4.indexOf(maxNumber);
+// const usingSpllice = arry4.splice(indexNumberOfMaxVal, 1);
+// const secondMaxNumber = Math.max(...arry4)
+// console.log(secondMaxNumber);
 
-const array = [1, 2, 3, 4, 5];
-array.splice(2, 2, 6, 7);
 
-console.log(array); 
+
+
+// SPLICE METHOD - array.splice(start, deleteCount, item1, item2, ...);
+
+// const array99 = [90, 80, 30, 70, 50];
+// array99.splice(0, 2);
+// console.log(array99); 
+
+// const array89 = [90, 80, 30, 70, 50];
+// array89.splice(0, 2, 77, 22);
+// console.log(array89);
+
+
+// FIND MISSING NUMBER
+
+// const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+// const missNum = [];
+// const findMissingNum = (curVal) => {
+//      const maxNum = Math.max(...curVal);
+//      const minNum = Math.min(...curVal);
+//      for(let i = minNum; i<maxNum; i++){
+//         if(curVal.indexOf(i) < 0){            //when indexOf not find the (i) in curVal it returns -1 and -1 is smaller than 0. and then the condition becomes true. 
+//             missNum.push(i);
+//         }
+//      }
+//      return(missNum) ;
+// }
+// console.log(findMissingNum(numbers));
+
+
+
+// FIND EVEN AND ODD NUMBERS IN GIVEN ARRAY.
+  
+const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
+    const even = numbers.filter((curVal)=> {
+       return curVal%2 === 0;
+    })
+    console.log(`Even Numbers: ${even}`);
+
+    const odd = numbers.filter((curVal)=> {
+        return curVal%2 === 1;
+     })
+     console.log(`Odd Numbers: ${odd}`);
+
+
+
+
