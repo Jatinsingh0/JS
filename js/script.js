@@ -784,7 +784,8 @@ console.log(user.personalInfo.address); */
 // func3()();
 
 
-// just a problem trying to solve.
+// just a problem trying to solve ?
+
 // for(var i = 0; i<3; i++){
 //   setTimeout(function(){
 //     console.log(i)
@@ -806,7 +807,9 @@ console.log(user.personalInfo.address); */
 
 
 
-// "this" KEYWORD
+
+// "this" KEYWORD ?
+
 // The value of "this" is not fixed; it depends on the way a function is invoked. Here are some common scenarios:
 
 // situation 1
@@ -865,13 +868,19 @@ console.log(user.personalInfo.address); */
 // trying.myArrowFunction()
   
 
-// Find duplicate numbers?
+
+
+// Find duplicate numbers ?
+
 // const arry = [1,2,3,4,5,2,4,6,7,8,9,6,7];
 // const findDuplicate = arry.filter((value,index,array) => array.indexOf(value) !== index);
 // console.log(findDuplicate);
 
 
-// Find the MAX and Min value in array?
+
+
+// Find the MAX and Min value in array ?
+
 // const arry = [21,32,53,34,56,42,43,66,72,98,69,86,97];
 // const maxNumber = Math.max(...arry)
 // console.log(maxNumber);
@@ -887,7 +896,8 @@ console.log(user.personalInfo.address); */
 
 
 
-// FINDING SECOND LARGEST VALUE
+// FINDING SECOND LARGEST VALUE ?
+
 // const arry4 = [21,32,93,34,56,42,43,66,72,95,69,86,97];
 // const maxNumber = Math.max(...arry4)
 // console.log(maxNumber);
@@ -899,7 +909,7 @@ console.log(user.personalInfo.address); */
 
 
 
-// SPLICE METHOD - array.splice(start, deleteCount, item1, item2, ...);
+// SPLICE METHOD - array.splice(start, deleteCount, item1, item2, ...); ?
 
 // const array99 = [90, 80, 30, 70, 50];
 // array99.splice(0, 2);
@@ -910,7 +920,9 @@ console.log(user.personalInfo.address); */
 // console.log(array89);
 
 
-// FIND MISSING NUMBER
+
+
+// FIND MISSING NUMBER ?
 
 // const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
 // const missNum = [];
@@ -928,7 +940,8 @@ console.log(user.personalInfo.address); */
 
 
 
-// FIND EVEN AND ODD NUMBERS IN GIVEN ARRAY.
+
+// FIND EVEN AND ODD NUMBERS IN GIVEN ARRAY ?
   
 // const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
 //     const even = numbers.filter((curVal)=> {
@@ -943,7 +956,8 @@ console.log(user.personalInfo.address); */
 
 
 
-// FINDING SUM OF ALL ELEMENTS
+// FINDING SUM OF ALL ELEMENTS ?
+
 // const numbers2 = [21,32,53,34,56,42,43,66,72,98,69,86,97];
 // const sum = (curElm) => {
 //     const sumOfElements = curElm.reduce((previous, curElement)=>{
@@ -955,5 +969,81 @@ console.log(user.personalInfo.address); */
 
 
 
+// CHECKING IF THE NUMBER IS PRIME OR NOT ?
+
+// let number = prompt("enter");
+// let i = 2;
+// if(number === 1){
+//    console.log(`${number} is not prime number neither composite.`)
+// }else if(number < 1){
+//     console.log(`prime number of ${number} is not possible.`)
+// }else if(number%i === 0){
+//     console.log(`${number} is not a prime number.`)
+// }else if(number%i === 1){
+//     console.log(`${number} is a prime number.`)
+// }else{
+//     console.log("please write numbers.")
+// }
 
 
+
+
+// REVERSE A STRING IN JS ?
+
+// const strReverse = (str) => {
+//  let strToArray = str.split("");     //FIRST CONVERT STRING INTO ARRAY.
+//  let strToArrayReverse = strToArray.reverse();  //WE'VE INBUILT METHOD TO REVERSE ARRAY.
+//  let strToArrayReverseJoin = strToArrayReverse.join("");  //NOW WE MAKE THE REVERSE ARRAY JOIN.
+//  return strToArrayReverseJoin ;
+// }
+// console.log(strReverse("javaScript"));
+
+
+
+
+// HOW TO FIND PALINDROME ?
+// PALINDROME is a word, verse, or sentence (such as "madam") or a number (such as 1881) that reads the same backward or forward.
+
+// let str = prompt("enter");
+// str = str.toLocaleLowerCase();
+
+// const palindrome = (val) => {
+//     let valReverse = val.split("").reverse().join("");
+//     if(val === valReverse){
+//        return "It's Palindrome" ;
+//     }else{
+//         return "Not a Palindrome";
+//     }
+// };
+
+// console.log(palindrome(str));
+
+
+
+// HOW TO SWAP TWO VARIABLE WITHOUT USING THE THIRD VARIABLE ?
+
+// let a = 10;
+// let b = 20;
+// [a,b] = [b,a];
+// console.log(`value of a is ${a} and value of b is ${b}`);
+
+
+
+// HOW TO MERGE TWO ARRAYS AND SORT THEM IN JS ?
+
+// let arr11 = [1,2,3,4];
+// let arr12 = [5,6,7,8];
+// let merge = arr11.concat(arr12); 
+// console.log(merge);
+
+
+
+// WRITE A PROGRAM TO FIND THE FACTORS OF AN INTEGER ?
+
+const integer = prompt("enter a number");
+console.log(`factors of ${integer}`)
+for(let i =1; i<=integer; i++){
+     if(integer%i === 0){
+       console.log(i);
+     }
+}
