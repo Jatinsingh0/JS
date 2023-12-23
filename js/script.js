@@ -1040,10 +1040,34 @@ console.log(user.personalInfo.address); */
 
 // WRITE A PROGRAM TO FIND THE FACTORS OF AN INTEGER ?
 
-const integer = prompt("enter a number");
-console.log(`factors of ${integer}`)
-for(let i =1; i<=integer; i++){
-     if(integer%i === 0){
-       console.log(i);
-     }
-}
+// const integer = prompt("enter a number");
+// console.log(`factors of ${integer}`)
+// for(let i =1; i<=integer; i++){
+//      if(integer%i === 0){
+//        console.log(i);
+//      }
+// }
+
+
+
+// TRYING TO MAKE A SIMPLE CALCULATOR ?
+
+// let operator = prompt("Choose either +, -, *, /");
+// let number1 = parseFloat(prompt(`Your number1 for ${operator}`));
+// let number2 = parseFloat(prompt(`Now your number2`));
+
+// if(operator == "+"){
+//    let result =  number1 + number2;
+//    console.log(result);
+// }else if(operator == "-"){ 
+//     let result =  number1 - number2;
+//     console.log(result);
+// }else if(operator == "*"){ 
+//     let result =  number1 * number2;
+//     console.log(result);
+// }else if(operator == "/"){ 
+//     let result =  number1 / number2;
+//     console.log(result);
+// }else if(operator == ""){
+//     console.log("write a number")
+// }
