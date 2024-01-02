@@ -878,7 +878,6 @@ console.log(user.personalInfo.address); */
 
 
 
-
 // Find the MAX and Min value in array ?
 
 // const arry = [21,32,53,34,56,42,43,66,72,98,69,86,97];
@@ -930,7 +929,7 @@ console.log(user.personalInfo.address); */
 //      const maxNum = Math.max(...curVal);
 //      const minNum = Math.min(...curVal);
 //      for(let i = minNum; i<maxNum; i++){
-//         if(curVal.indexOf(i) < 0){            //when indexOf not find the (i) in curVal it returns -1 and -1 is smaller than 0. and then the condition becomes true. 
+//         if(curVal.indexOf(i) < 0){            //when indexOf not able to find the (i) in curVal it returns -1 and -1 is smaller than 0. and then the condition becomes true. 
 //             missNum.push(i);
 //         }
 //      }
@@ -1029,7 +1028,7 @@ console.log(user.personalInfo.address); */
 
 
 
-// HOW TO MERGE TWO ARRAYS AND SORT THEM IN JS ?
+// HOW TO MERGE TWO ARRAYS ?
 
 // let arr11 = [1,2,3,4];
 // let arr12 = [5,6,7,8];
@@ -1071,3 +1070,203 @@ console.log(user.personalInfo.address); */
 // }else if(operator == ""){
 //     console.log("write a number")
 // }
+
+
+
+// FIND THE FIBONACCI SEQUENCE
+
+// let a = 0;
+// let b = 1;
+// for(let i = 0; i<=15; i++){
+//     let fibb = a + b; 
+//     a=b;
+//     b=fibb;
+//     console.log(fibb)
+// }
+
+
+
+// how many times a letter occurence in a string;
+
+// let str101 = prompt("enter a string");
+// let ltr = prompt("find a letter")
+// let counter = 0;
+// const strlnth = str101.length;
+
+// for(let i = 0; i<= strlnth; i++){
+//     if(str101[i] == ltr){
+//        counter++
+//     }
+// }
+// console.log(counter);
+
+
+
+// TABLE FOR ANY NUMBER
+
+// let tblnbr = prompt("write a number for table");
+// for(i= 1; i<= 10; i++){
+//    document.write(`${tblnbr}x${i} = ${tblnbr*i}`)
+//    document.write("<br>")
+// }
+
+
+
+// just passing colors to students according to their name length.
+
+// let names = ["Jatin", "virat", "conor","messi", "ronaldo", "khabib", "jonathan", "anishdfd", "romandf", "piyush", "ammu", "rohit"];
+// let houses = [];
+
+// for(let name of names){
+//     if(name.length < 6){
+//         houses.push("blue");
+//     }
+//     else if(name.length < 8){
+//         houses.push("red");
+//     }
+//     else{
+//         houses.push("green");
+//     }
+// }
+// console.log(houses);
+
+
+
+// Check if the Object is ARRAY or NOT?
+
+// const checkArray=(elm)=>{
+//    return Array.isArray(elm);
+// }
+// console.log(checkArray({}));      //output: false
+// console.log(checkArray([]))       //output: true
+
+
+// How to empty an Array?
+// const arr101 = [1,2,3,4,5]
+// arr101.length = [];
+// console.log(arr101.length)
+
+
+
+// Check if the number ia an integer or not?  
+
+// const integer = 1;
+// const check = Number.isInteger(integer)
+// console.log(check)
+
+
+// Concat method for duplicat Array.
+
+// const dublicate = (arr) => {
+//     return arr.concat(arr)
+// }
+// console.log(dublicate([1,2,3,4,5]))
+
+// const nn = [6,7,8,9]
+// const ddd = nn.concat(nn)
+// console.log(ddd)
+
+
+
+// REVERSE A NUMBER.
+// const num102 = 21
+// const rvrseNum = (val) => {
+//     return Number(val.toString().split("").reverse().join(""))   //we used Number method for convert 21 into a number because after used toString method it became string so that's why.
+// }
+//  console.log(rvrseNum(num102))
+
+
+
+// Check if a passed string is palindrome or not?
+
+//  let str102 = prompt("check palindrome");
+//  str102 = str102.toLocaleLowerCase();
+
+// const checkpalindrome = (val) => {
+//    const revVal = val.split("").reverse().join("");
+//    if(str102 === revVal){
+//      console.log("it's a palindrome")
+//    }else(
+//     console.log("Not a palindrome")
+//    )
+// }
+// checkpalindrome(str102)
+
+
+
+// Converting first letter of a string in upperCase
+
+// const  nletterUpperCase(str103))
+
+
+
+// Slice METHOD
+
+// let originalString = "Hello, World!";
+// let slicedString = originalString.slice(2,11);
+// console.log(slicedString); 
+
+
+
+// Sum of array
+
+// let arr104 = [1,2,3,4,5,6];
+// let sum = 0;
+// let sumOfArray = arr104.forEach((curVal)=>{
+//     sum = curVal + sum  ;  
+// })
+// console.log(sum)
+
+// let arr105 = [2,2,"jhbj","kllk",7,"llmkjh",9];
+// let sum = 0;
+// let sumOfArray = arr105.forEach((curVal)=>{
+//       if(typeof curVal == "number"){
+//          sum = curVal + sum
+//       }
+// })
+// console.log(sum)
+
+
+
+// just getting the elements of an array passed in N.
+
+// const arr = [54,34,23,11,44,55];
+// const arrfunc = (arrr, n = 1) => {            //default value of n is 1;
+//            for(let i = 0; i<n; i++){
+//                console.log(arrr[i])
+//            }
+// }
+// arrfunc(arr,2);
+
+
+
+// write a javascript function to find most frequent element of an array?
+
+// const arr109 = [29,12,22,12,22,12,1,54];
+// const counter = 0;
+// const mostFrequent = (val) => {
+//        //  solve this later.    
+// }
+// console.log(counter)
+// mostFrequent(arr109);
+
+
+
+
+// Shuffle an array.
+
+// const shuffle = (val) => {
+//   let totalShuffleElm = val.length;
+//   while(totalShuffleElm > 0){
+//     totalShuffleElm--;
+//     let swapToElm = Math.floor(Math.random()*totalShuffleElm);
+//     let temp = val[totalShuffleElm];
+//     val[totalShuffleElm] = val[swapToElm];
+//     val[swapToElm] = temp;
+//   }
+//   return val;
+// }
+
+// console.log(shuffle([1,2,3,4,5,6,7]));
+
+
