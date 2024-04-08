@@ -474,7 +474,7 @@
   const debounceTag = document.querySelector(".d_count");
   let nrCnt = 0;
   let thtlCnt = 0;
-  let dbucCnt = 0;
+  let dbucCnt = 0;   
   let isScrolling = true;
 
   const normalCount = () => {
@@ -614,18 +614,85 @@
 
 
 
+<!-- INPUT VALIDATION -->
+<!-- <input type="text" placeholder="username">
+<p id="warning"></p>
+<p id="valid"></p>
+
+<script>
+  const inp = document.querySelector("input");
+  const inpWar = document.getElementById("warning");
+  const val = document.getElementById("valid");
+
+  inp.addEventListener("input", function(e){
+    curVal = e.target.value
+    if(curVal.length < 3){
+       inpWar.innerHTML = "username should be grater than 3"
+       val.innerHTML = " "
+    }else if (curVal == " ") {
+      inpWar.innerHTML = " "
+      val.innerHTML = ""
+    }
+    else{
+      inpWar.innerHTML = " "
+      val.innerHTML = "It's valid"
+    }
+  })
+</script> -->
 
 
+<!-- HOW CLOSURES WORKS -->
+<!--<h1 id="name" style="font-size: 50px;">Jatin</h1>
+<button type="button" id="btn1">change size to 20</button>
+<button type="button" id="btn2">change size to 16</button>
+<button type="button" id="btn3">change size to 8</button>
+<button type="button" id="btn4">change size to 70</button>
+
+<script>
+
+  let name = document.querySelector("#name");
+  let btn1 = document.querySelector("#btn1");
+  let btn2 = document.querySelector("#btn2");
+  let btn3 = document.querySelector("#btn3");
+  let btn4 = document.querySelector("#btn4");
 
 
+  const textSizer = (size) => {
+    function changeSize(){
+      name.style.fontSize = `${size}px`;
+    }
+     return changeSize;
+  } -->
+   <!-- In the textSize
+    +r function, I've defined an inner function changeSize that is returned. This inner function changeSize has access to the size parameter of the outer function textSizer even after textSizer has finished executing. This behavior is due to JavaScript closures. -->
+<!--   let size20 = textSizer(20);
+   let size16 = textSizer(16);
+   let size8 = textSizer(8);
+   let size70 = textSizer(70);
 
+   btn1.addEventListener("click", size20);
+   btn2.addEventListener("click", size16);
+   btn3.addEventListener("click", size8);
+   btn4.addEventListener("click", size70)
+ </script> -->
 
-
-
-
-
-
-
+<button type="button" id="countNum">count</button>
+<script>
+  const num = document.getElementById("countNum")
+  const numbers = [1,2,3,4,5,6,7];
+  let index = 0;
+  num.addEventListener("click", ()=>{
+    if(index < numbers.length){
+      num.innerHTML = numbers[index];
+      index++
+    }else{
+      index = 0;
+      num.innerHTML = +"count"
+    }
+  })
+   
+</script>
+ 
 
 
 

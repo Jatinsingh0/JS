@@ -603,11 +603,9 @@ console.log(user.personalInfo.address); */
 //   document.write("<br>");
 // }
 
-
-// Closure: 
+// Closure:
 // closure is created when a function is defined inside another function (the outer function),
 // and the inner function has access to variables from the outer function, even after the outer function has finished executing.
-
 
 // let sum = function(a){
 //     console.log("Jatin is learning " + a);
@@ -623,17 +621,17 @@ console.log(user.personalInfo.address); */
 
 // let sum2 = function(a, b, c){
 //     console.log(a+ b+ c);
- 
+
 //     return {
 //         getSumTwo: function(){
 //         return a + b ;
 //       },
-//       getSumThree: function(){ 
+//       getSumThree: function(){
 //         return a+b+c;
 //       },
 //       getSumFour: function(z){
 //         return a+b+c+z;
-//       },     
+//       },
 // }
 // }
 
@@ -642,7 +640,6 @@ console.log(user.personalInfo.address); */
 // console.log(str.getSumThree());
 // console.log(str.getSumFour(9));
 
-
 // function callApi(method){
 //     return function(url){
 //         console.log(`we are using ${method} and fetching ${url}`);
@@ -650,7 +647,6 @@ console.log(user.personalInfo.address); */
 //   }
 //   const store = callApi("GET");
 //   store("https://example.com/api");
-   
 
 //   function cartCounter(){
 //     let count = 0;
@@ -677,7 +673,6 @@ console.log(user.personalInfo.address); */
 //   store.decrement();
 //   console.log(store.value())
 
-
 // CALL, APPLY, BIND
 
 // CALL: we have just made one function and we we are calling that function with different object. Just with the help of CALL keyWord.
@@ -702,7 +697,7 @@ console.log(user.personalInfo.address); */
 
 // print.call(user2, "Delhi", "India", "callMethod");
 
-// // APPLY: you can use many arguments as an array list. but You must have to use Array list in Apply method otherwise method shows you error. 
+// // APPLY: you can use many arguments as an array list. but You must have to use Array list in Apply method otherwise method shows you error.
 // print.apply(user2, ["Delhi", "India", "applyMethod"]);
 
 // // BIND : bind is same as call but here you just have to make a copy the result and invoke later.
@@ -711,11 +706,9 @@ console.log(user.personalInfo.address); */
 
 // print.call(user2, ["Delhi", "India", "callMethod"]); // you can also you (call and bind) method like this just put the arguments in array bracket and only use one parameter.
 
-
 // setTimeout and setInterval
 // settimeout runs only once after the given time.
 // setinterval runs again & again after the given time.
-
 
 // console.log("first");
 
@@ -733,22 +726,19 @@ console.log(user.personalInfo.address); */
 
 // console.log("sixth line");
 
-
 // setInterval(function(){
 //     console.log("I'm setInterval")
 // },1000)
-    
+
 // let setinter = function(i){
 //     console.log("function for setInterval" + i)
 // };
 // setInterval(setinter , 1000, 3);
 
-
-
 // FUNCTIONAL Programming
 
 // In js we can assign a function to a variable.
-// const func = function(){ 
+// const func = function(){
 //     console.log("assign a function to a variable.");
 //     return {
 //          rdds(){
@@ -762,7 +752,6 @@ console.log(user.personalInfo.address); */
 // const hh = func(); //func is not a object it is function. that's why we need to invoke func first to get the object, and then call rdds.
 // hh.rdds();
 
-
 // Pass a Function as an Argument.
 // -since functions are first class citizens in javascript, we are able to pass them as an argument.
 // const func1 = function(){
@@ -773,7 +762,6 @@ console.log(user.personalInfo.address); */
 // };
 // func2(func1());
 
-
 // Returning a Function.
 // -this is the key concept when it comes to function progamming.
 // const func3 = () => {
@@ -783,14 +771,13 @@ console.log(user.personalInfo.address); */
 // };
 // func3()();
 
-
 // just a problem trying to solve ?
 
 // for(var i = 0; i<3; i++){
 //   setTimeout(function(){
 //     console.log(i)
 //   }(), 1000)        // IIFE (Immediately Invoked Function Expression)
-// }; 
+// };
 
 // The for loop runs quickly, and all three setTimeout functions are set up almost simultaneously.
 
@@ -804,9 +791,6 @@ console.log(user.personalInfo.address); */
 //       console.log(a)
 //     }, 1000)
 //   };
-
-
-
 
 // "this" KEYWORD ?
 
@@ -857,7 +841,7 @@ console.log(user.personalInfo.address); */
 //     name: "Jatin",
 //      myArrowFunction: function(){
 //         console.log(this.name);
-        
+
 //         const nextArrow = () => {
 //            console.log(this)
 //         }
@@ -866,17 +850,12 @@ console.log(user.personalInfo.address); */
 
 // }
 // trying.myArrowFunction()
-  
-
-
 
 // Find duplicate numbers ?
 
 // const arry = [1,2,3,4,5,2,4,6,7,8,9,6,7];
 // const findDuplicate = arry.filter((value,index,array) => array.indexOf(value) !== index);
 // console.log(findDuplicate);
-
-
 
 // Find the MAX and Min value in array ?
 
@@ -893,8 +872,6 @@ console.log(user.personalInfo.address); */
 // const minNumber = Math.min(...arry2)
 // console.log(minNumber);
 
-
-
 // FINDING SECOND LARGEST VALUE ?
 
 // const arry4 = [21,32,93,34,56,42,43,66,72,95,69,86,97];
@@ -905,21 +882,15 @@ console.log(user.personalInfo.address); */
 // const secondMaxNumber = Math.max(...arry4)
 // console.log(secondMaxNumber);
 
-
-
-
 // SPLICE METHOD - array.splice(start, deleteCount, item1, item2, ...); ?
 
 // const array99 = [90, 80, 30, 70, 50];
 // array99.splice(0, 2);
-// console.log(array99); 
+// console.log(array99);
 
 // const array89 = [90, 80, 30, 70, 50];
 // array89.splice(0, 2, 77, 22);
 // console.log(array89);
-
-
-
 
 // FIND MISSING NUMBER ?
 
@@ -929,7 +900,7 @@ console.log(user.personalInfo.address); */
 //      const maxNum = Math.max(...curVal);
 //      const minNum = Math.min(...curVal);
 //      for(let i = minNum; i<maxNum; i++){
-//         if(curVal.indexOf(i) < 0){            //when indexOf not able to find the (i) in curVal it returns -1 and -1 is smaller than 0. and then the condition becomes true. 
+//         if(curVal.indexOf(i) < 0){            //when indexOf not able to find the (i) in curVal it returns -1 and -1 is smaller than 0. and then the condition becomes true.
 //             missNum.push(i);
 //         }
 //      }
@@ -937,11 +908,8 @@ console.log(user.personalInfo.address); */
 // }
 // console.log(findMissingNum(numbers));
 
-
-
-
 // FIND EVEN AND ODD NUMBERS IN GIVEN ARRAY ?
-  
+
 // const numbers = [21,32,53,34,56,42,43,66,72,98,69,86,97];
 //     const even = numbers.filter((curVal)=> {
 //        return curVal%2 === 0;
@@ -953,8 +921,6 @@ console.log(user.personalInfo.address); */
 //      })
 //      console.log(`Odd Numbers: ${odd}`);
 
-
-
 // FINDING SUM OF ALL ELEMENTS ?
 
 // const numbers2 = [21,32,53,34,56,42,43,66,72,98,69,86,97];
@@ -965,8 +931,6 @@ console.log(user.personalInfo.address); */
 //     console.log(sumOfElements);
 //  }
 //  sum(numbers2);
-
-
 
 // CHECKING IF THE NUMBER IS PRIME OR NOT ?
 
@@ -984,9 +948,6 @@ console.log(user.personalInfo.address); */
 //     console.log("please write numbers.")
 // }
 
-
-
-
 // REVERSE A STRING IN JS ?
 
 // const strReverse = (str) => {
@@ -996,9 +957,6 @@ console.log(user.personalInfo.address); */
 //  return strToArrayReverseJoin ;
 // }
 // console.log(strReverse("javaScript"));
-
-
-
 
 // HOW TO FIND PALINDROME ?
 // PALINDROME is a word, verse, or sentence (such as "madam") or a number (such as 1881) that reads the same backward or forward.
@@ -1017,8 +975,6 @@ console.log(user.personalInfo.address); */
 
 // console.log(palindrome(str));
 
-
-
 // HOW TO SWAP TWO VARIABLE WITHOUT USING THE THIRD VARIABLE ?
 
 // let a = 10;
@@ -1026,16 +982,12 @@ console.log(user.personalInfo.address); */
 // [a,b] = [b,a];
 // console.log(`value of a is ${a} and value of b is ${b}`);
 
-
-
 // HOW TO MERGE TWO ARRAYS ?
 
 // let arr11 = [1,2,3,4];
 // let arr12 = [5,6,7,8];
-// let merge = arr11.concat(arr12); 
+// let merge = arr11.concat(arr12);
 // console.log(merge);
-
-
 
 // WRITE A PROGRAM TO FIND THE FACTORS OF AN INTEGER ?
 
@@ -1047,8 +999,6 @@ console.log(user.personalInfo.address); */
 //      }
 // }
 
-
-
 // TRYING TO MAKE A SIMPLE CALCULATOR ?
 
 // let operator = prompt("Choose either +, -, *, /");
@@ -1058,33 +1008,29 @@ console.log(user.personalInfo.address); */
 // if(operator == "+"){
 //    let result =  number1 + number2;
 //    console.log(result);
-// }else if(operator == "-"){ 
+// }else if(operator == "-"){
 //     let result =  number1 - number2;
 //     console.log(result);
-// }else if(operator == "*"){ 
+// }else if(operator == "*"){
 //     let result =  number1 * number2;
 //     console.log(result);
-// }else if(operator == "/"){ 
+// }else if(operator == "/"){
 //     let result =  number1 / number2;
 //     console.log(result);
 // }else if(operator == ""){
 //     console.log("write a number")
 // }
 
-
-
 // FIND THE FIBONACCI SEQUENCE
 
 // let a = 0;
 // let b = 1;
 // for(let i = 0; i<=15; i++){
-//     let fibb = a + b; 
+//     let fibb = a + b;
 //     a=b;
 //     b=fibb;
 //     console.log(fibb)
 // }
-
-
 
 // how many times a letter occurence in a string;
 
@@ -1100,8 +1046,6 @@ console.log(user.personalInfo.address); */
 // }
 // console.log(counter);
 
-
-
 // TABLE FOR ANY NUMBER
 
 // let tblnbr = prompt("write a number for table");
@@ -1109,8 +1053,6 @@ console.log(user.personalInfo.address); */
 //    document.write(`${tblnbr}x${i} = ${tblnbr*i}`)
 //    document.write("<br>")
 // }
-
-
 
 // just passing colors to students according to their name length.
 
@@ -1130,8 +1072,6 @@ console.log(user.personalInfo.address); */
 // }
 // console.log(houses);
 
-
-
 // Check if the Object is ARRAY or NOT?
 
 // const checkArray=(elm)=>{
@@ -1140,20 +1080,16 @@ console.log(user.personalInfo.address); */
 // console.log(checkArray({}));      //output: false
 // console.log(checkArray([]))       //output: true
 
-
 // How to empty an Array?
 // const arr101 = [1,2,3,4,5]
 // arr101.length = [];
 // console.log(arr101.length)
 
-
-
-// Check if the number ia an integer or not?  
+// Check if the number ia an integer or not?
 
 // const integer = 1;
 // const check = Number.isInteger(integer)
 // console.log(check)
-
 
 // Concat method for duplicat Array.
 
@@ -1166,16 +1102,12 @@ console.log(user.personalInfo.address); */
 // const ddd = nn.concat(nn)
 // console.log(ddd)
 
-
-
 // REVERSE A NUMBER.
 // const num102 = 21
 // const rvrseNum = (val) => {
 //     return Number(val.toString().split("").reverse().join(""))   //we used Number method for convert 21 into a number because after used toString method it became string so that's why.
 // }
 //  console.log(rvrseNum(num102))
-
-
 
 // Check if a passed string is palindrome or not?
 
@@ -1192,28 +1124,22 @@ console.log(user.personalInfo.address); */
 // }
 // checkpalindrome(str102)
 
-
-
 // Converting first letter of a string in upperCase
 
 // const  nletterUpperCase(str103))
-
-
 
 // Slice METHOD
 
 // let originalString = "Hello, World!";
 // let slicedString = originalString.slice(2,11);
-// console.log(slicedString); 
-
-
+// console.log(slicedString);
 
 // Sum of array
 
 // let arr104 = [1,2,3,4,5,6];
 // let sum = 0;
 // let sumOfArray = arr104.forEach((curVal)=>{
-//     sum = curVal + sum  ;  
+//     sum = curVal + sum  ;
 // })
 // console.log(sum)
 
@@ -1226,8 +1152,6 @@ console.log(user.personalInfo.address); */
 // })
 // console.log(sum)
 
-
-
 // just getting the elements of an array passed in N.
 
 // const arr = [54,34,23,11,44,55];
@@ -1238,20 +1162,15 @@ console.log(user.personalInfo.address); */
 // }
 // arrfunc(arr,2);
 
-
-
 // write a javascript function to find most frequent element of an array?
 
 // const arr109 = [29,12,22,12,22,12,1,54];
 // const counter = 0;
 // const mostFrequent = (val) => {
-//        //  solve this later.    
+//        //  solve this later.
 // }
 // console.log(counter)
 // mostFrequent(arr109);
-
-
-
 
 // Shuffle an array.
 
@@ -1268,5 +1187,250 @@ console.log(user.personalInfo.address); */
 // }
 
 // console.log(shuffle([1,2,3,4,5,6,7]));
+
+// HIGHER ORDER FUNCTION = when a function takes another function as an argument and return a function called Higher order function.
+
+// const radius = [12, 11, 22, 28];
+
+// const area = (rad) => {
+//  return Math.PI * rad * rad;
+// }
+// const circumstance = (rad) => {
+//   return (2 * Math.PI * rad);
+// }
+// const diameter = (rad) => {
+//   return 2 * rad;
+// }
+
+// const calculate = (rad, logic) => {
+//   const output = [];
+//   for(let i = 0; i < rad.length; i++){
+//       output.push(logic(rad[i]))   // `rad[i]` refers to the element in the array `rad` at the index `i`. This value is the radius at the current iteration of the loop. basicaly i is index value
+//   }
+//   console.log(output)
+// }
+// calculate(radius, area);
+// calculate(radius, circumstance);
+// calculate(radius, diameter);
+
+// CALLBACK function.
+// function xyz(a,b,callback){
+//    let mn = a + b ;
+//    callback(mn)
+// }
+
+// const ab = (mn) => {
+//   console.log(mn, "this is a callback function")
+// }
+// xyz(2,3, ab);
+
+// Infinite currying.
+
+// function abx(a){
+//     return function(b){
+//       if(b) {
+//         return abx(a+b)
+//     };
+//        return a;
+//     }
+// }
+
+// console.log(abx(2)(8)(7)())
+
+// Ques
+
+// function xy(){
+//     for(var i = 0; i<3; i++){
+//         const val = (i) => {
+//             setTimeout(()=>console.log(i), 1000)
+//         }
+//         val(i)
+//       }
+// }
+// xy()
+
+// Reverse a String
+
+// const cba = (e)=>{
+//   const abc = e.split("").reverse().join("");
+//    console.log(abc)
+// }
+// cba("Jatin")
+
+// Finding a Specific data from large dataset.
+// const arr99 = ["jatin", "virat", "kane", "stokes"];
+// const searchedItem = "ja";
+// const find = arr99.filter((item) => item.includes(searchedItem))
+// console.log(find)
+
+// CLOSURE
+// const main = (name) => {
+//    function child(){
+//     console.log(name)
+//    }
+//    return child;
+// }
+// let res = main("virat");
+// res();
+
+// const arr21 = ["jatin", "virat", "kane"]
+// for(let cricketer of arr21){
+//     console.log(cricketer)
+// }
+
+// const findLongestWord = (str) => {
+//    const word = str.split(" ")
+//    const longestWord = word[0];
+//    for(let i = 0; i<word.length; i++){
+//     if(word[i].length > longestWord.length){
+//         longestWord = word[i]
+//     }
+//    }
+//    return longestWord
+
+// }
+// console.log(findLongestWord("JatinSingh and Virat are best batsman in the world"));
+
+// you have to implement a function generateHash that generate a hash tag from a given input string. And each word should be capitalized.
+
+// const generateHash = (str) => {
+//  const words = str.split(" ");
+//  const capitalizedWords = words.map((word)=>{               //you can return a value in for each that is why we choose map function.
+//     return word.charAt(0).toUpperCase()+ word.slice(1);
+//  })
+//  return "#" + capitalizedWords.join("")
+
+// }
+// console.log(generateHash("jatin is the best batsman"))
+
+
+// write a function that takes two parameter a string and a character to count. function should return the number of times the specified character appears in the string.
+// const countChar = (a, b) => {
+//   const char = b.toLowerCase();
+//   const lower = a.toLowerCase();
+//   const word = lower.split("");
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === char) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(countChar("jatinsinghandviratIII", "I"));
+
+
+// Checking if the word is palindrome or not.
+// const val = prompt("check palindrome")
+// const isPalindrome = (val) => {
+//     const word = val.toLowerCase();
+//     const check = word.split("").reverse("").join("");
+//     return word === check ? "It's a Palindrome" : "Not a Palindrome";
+//     // if(word == check){
+//     //      return "It's a Palindrome"
+//     // }else{
+//     //     return "Not a Palindrome"
+//     // }
+// }
+// console.log(isPalindrome(val))
+
+// MAXIMUM NUMBER IN ARRAY.
+// let maxii = [11,24,63,14,57,66,37]
+// const max = maxii.reduce((max, curEle) => max > curEle ? max : curEle, maxii[0])
+// console.log(max)
+
+// Find the Average.
+// const average = (arr) => {
+//  let sum = arr.reduce((accumulator, curElem) => accumulator + curElem , arr[0])
+//  return sum / arr.length;
+// }
+
+// console.log(average([1,3,4,5,77,6,54,5,65,9]))  
+
+
+// INFINITE CURRYING
+// function sum(num1){
+//   return function func(num2){
+//      if(num2 === undefined){
+//         return num1
+//      }else{
+//         return sum(num1 + num2)
+//      }
+//   }
+// }
+
+// console.log(sum(1)(2)(5)(6)(7)())
+
+
+// checking if the arrays in argument are equal or not.
+// const arraysAreEqual = (a, b) => {
+//     if (a.length !== b.length) {
+//         return false;
+//     }
+
+//     for(let i = 0; i<a.length; i++){
+//        if(a[i] !== b[i]){
+//            return "false"
+//        }
+//     }
+//     return "true"
+  
+// }
+// console.log(arraysAreEqual([7,1,3], [7,2,3])) 
+
+
+// REST operator
+// const dis = (a, b, ...c) => {
+//   console.log(c)
+// }
+// dis(1,2,3,4,5,6,7,8,9)
+
+
+// SPLICE METHOD
+// const arr21 = [1,2,3,4,5,6];
+// const arr19 = arr21.splice(3,1,"update"); //3 is the StartingIndex, 1 is the deletecount, then adding values.
+// console.log(arr21)
+
+// const arr22 = ["a", "b", "c", "d" ];
+// const arr23 = arr22.splice(2, 0, "x", "y", "Z");
+// console.log(arr22)
+
+
+// const arr25 = ["a", "b", "c", "d","e"];
+// const arr26 = arr25.splice(2, 2);  
+// console.log(arr25)
+
+
+// SLICE METHOD
+
+// const arr25 = ["a", "b", "c", "d","e","i"];
+// const arr26 = arr25.slice(2, 5);  //2 is the starting index and 5 is the end index (end not included)
+// console.log(arr26)
+
+
+// for ...of loop
+// const arr88 = [1,2,3,4,5,6,7,8]
+// for(let val of arr88){
+//     console.log(val)
+// }
+
+
+//for...in loop is used to loop through the properties of an object.
+// const arr89 = {
+//     name: "Jatin singh",
+//     role: "developer",
+// }
+// for(let xyz in arr89){
+//     console.log(xyz)         //it allows you to iterate over the keys of an object.
+//     console.log(arr89[xyz])  //and access the values by using the [xyz] as an Index value.
+// }
+
+
+// Removing duplicate element
+// const removeDuplicate = (arr) => {
+//     const checking = arr.filter((value, index) => arr.indexOf(value) === index);
+//     return checking;
+// }
+// console.log(removeDuplicate([1, 2, 3, 1, 2, 3, 4, 2, 6, 7, 8, 6, 7]));
 
 
