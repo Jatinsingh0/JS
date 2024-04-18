@@ -1303,7 +1303,6 @@ console.log(user.personalInfo.address); */
 // }
 // console.log(generateHash("jatin is the best batsman"))
 
-
 // write a function that takes two parameter a string and a character to count. function should return the number of times the specified character appears in the string.
 // const countChar = (a, b) => {
 //   const char = b.toLowerCase();
@@ -1318,7 +1317,6 @@ console.log(user.personalInfo.address); */
 //   return count;
 // };
 // console.log(countChar("jatinsinghandviratIII", "I"));
-
 
 // Checking if the word is palindrome or not.
 // const val = prompt("check palindrome")
@@ -1345,8 +1343,7 @@ console.log(user.personalInfo.address); */
 //  return sum / arr.length;
 // }
 
-// console.log(average([1,3,4,5,77,6,54,5,65,9]))  
-
+// console.log(average([1,3,4,5,77,6,54,5,65,9]))
 
 // INFINITE CURRYING
 // function sum(num1){
@@ -1361,7 +1358,6 @@ console.log(user.personalInfo.address); */
 
 // console.log(sum(1)(2)(5)(6)(7)())
 
-
 // checking if the arrays in argument are equal or not.
 // const arraysAreEqual = (a, b) => {
 //     if (a.length !== b.length) {
@@ -1374,17 +1370,15 @@ console.log(user.personalInfo.address); */
 //        }
 //     }
 //     return "true"
-  
-// }
-// console.log(arraysAreEqual([7,1,3], [7,2,3])) 
 
+// }
+// console.log(arraysAreEqual([7,1,3], [7,2,3]))
 
 // REST operator
 // const dis = (a, b, ...c) => {
 //   console.log(c)
 // }
 // dis(1,2,3,4,5,6,7,8,9)
-
 
 // SPLICE METHOD
 // const arr21 = [1,2,3,4,5,6];
@@ -1395,11 +1389,9 @@ console.log(user.personalInfo.address); */
 // const arr23 = arr22.splice(2, 0, "x", "y", "Z");
 // console.log(arr22)
 
-
 // const arr25 = ["a", "b", "c", "d","e"];
-// const arr26 = arr25.splice(2, 2);  
+// const arr26 = arr25.splice(2, 2);
 // console.log(arr25)
-
 
 // SLICE METHOD
 
@@ -1407,13 +1399,11 @@ console.log(user.personalInfo.address); */
 // const arr26 = arr25.slice(2, 5);  //2 is the starting index and 5 is the end index (end not included)
 // console.log(arr26)
 
-
 // for ...of loop
 // const arr88 = [1,2,3,4,5,6,7,8]
 // for(let val of arr88){
 //     console.log(val)
 // }
-
 
 //for...in loop is used to loop through the properties of an object.
 // const arr89 = {
@@ -1425,7 +1415,6 @@ console.log(user.personalInfo.address); */
 //     console.log(arr89[xyz])  //and access the values by using the [xyz] as an Index value.
 // }
 
-
 // Removing duplicate element
 // const removeDuplicate = (arr) => {
 //     const checking = arr.filter((value, index) => arr.indexOf(value) === index);
@@ -1433,4 +1422,139 @@ console.log(user.personalInfo.address); */
 // }
 // console.log(removeDuplicate([1, 2, 3, 1, 2, 3, 4, 2, 6, 7, 8, 6, 7]));
 
+// Finding vowels.
+// const countVowels = (val) => {
+//   let count = 0;
+//   const str = val.toLowerCase();
+//   const vow = str.split("");
+//   vow.map((curEle) => {
+//     if (
+//       curEle === "a" ||
+//       curEle === "e" ||
+//       curEle === "i" ||
+//       curEle === "o" ||
+//       curEle === "u"
+//     ) {
+//       count++;
+//     }
+//   });
+//   return count
+// };
+
+// console.log(countVowels("Hello worldUU"));
+
+
+// REMOVING vowels Form String.
+// const str = "hey JS! you are Amazing";
+// const removeVowels = (para) => {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   const val = para.toLowerCase().split("");
+//   const withoutVow = val.filter((val)=>{
+//       return !vowels.includes(val) 
+//   })
+//  return withoutVow.join("");
+// }
+// console.log(removeVowels(str));
+
+
+
+// COUNT VOWELS
+// const str = "hey JS! you are Amazing";
+// const countVowels = (para) => {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   let count = 0; 
+//   const val = para.toLowerCase().split("");
+//   val.forEach((val)=>{
+//       vowels.includes(val) && count++
+//   })
+//  return count;
+// }
+// console.log(countVowels(str));
+
+
+
+// WHEN YOU USE TIMERS AND YOU CHANGED YOUR TAB. THEN OUR BROWSER SUSPEND ALL THE TIMERS. BECAUSE TAB BECOME INACTIVE.
+// let num11 = 0;
+// setInterval(()=>{
+// console.log(++num11);
+// }, 100);
+
+
+// WRONG CODE REASON IS DEFINED BELOW
+// const obj = Object.create(null);
+// const keyToCheck = "randonKey";
+
+// if(obj.hasOwnProperty(keyToCheck)){
+//   console.log("Key Found")
+// }else{
+//     console.log("Key Not Found")
+// }
+// - whenEver you create a new object with null.
+// - that newly object has nothing in it's prototype chain.
+// - so we can't access obj.hasOwnProperty instead we use Object.hasOwn(nameofObject, foundvalue).
+
+
+// FINDING SUM OF SQUARES
+// const elem = [1,2,3,4];
+// const sumOfSquare = elem.reduce((acc, curEle)=>{
+//     return acc + curEle * curEle
+// }, 0)
+// console.log(sumOfSquare)
+
+
+// FINDING MINIMUM VALUE
+// const mini = [41,23,34,34,55,66,97,82,93];
+// const minimumNum = Math.min(...mini) ;
+// console.log(minimumNum)
+
+// USED REDUCE METHOD FOR MINIMIM VALUE.
+// const findMin = mini.reduce((acc, curElm)=> {
+//     return curElm < acc ? curElm : acc ;
+// }, mini[0])
+// console.log(findMin)
+
+
+
+// PRACTICING FOR CALLSTACK.
+// console.log("a");
+// console.log("b");
+// async function test(){
+//     return 1
+// }
+// test().then(()=> console.log("promises"))
+// console.log("c");
+// setTimeout(()=>{
+//     console.log("d")
+// }, 3000);
+// console.log("z")
+
+
+// FINDING THE AVERAGE OF SUM
+// const mean = (arr) => {
+//     const sum = arr.reduce((acc, curEle)=> {
+//        return acc + curEle; 
+//     }, 0)
+//     return sum / arr.length
+// }
+
+// console.log(mean([2,1,3,4,5]))
+
+
+
+// RETURN only the elements that occur exactly once.
+// Inside the condition, numbers.indexOf(value) returns the first index of the current value, and numbers.lastIndexOf(value) returns the last index of the current value. If these indices are equal, it means the value occurs exactly once in the array, so it is included in the filtered array.
+// const numbers = [1,2,3,1,3,1,3,4,5,6,3,4,6,5,8,7,8,5,8,9,10,12,13];
+// const dup = numbers.filter((value) => {
+//     return (numbers.indexOf(value) !== numbers.lastIndexOf(value)) ;
+// })
+// console.log(dup)
+
+
+// MAKING THE OBJECT OF EACH ELEMENT OCCURENCE.
+// const numbers = [1,2,3,1,3,1,3,4,5,6,3,4,6,5,8,7,8,5,8,9,10,12,13];
+// const counts = {};
+// for(let element of numbers){
+//     counts[element] = (counts[element] || 0) + 1
+// }
+// console.log(counts)
 
