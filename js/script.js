@@ -67,7 +67,7 @@
 //     }
 // }
 
-// prompt,confirm and alert for user interact.
+// prompt,confirm and alert for user interaction.
 
 // prompt
 
@@ -142,7 +142,7 @@ console.log(play);*/ // to see full array.
 
 // }
 
-// function Table(num){      // if you want to any repeated task you can usefunction.
+// function Table(num){      // if you want to perform repeated task you can use functions.
 
 //     for(i=1; i<=10; i++){
 //         document.write(`${num} x ${i} = ${num*i}`);
@@ -181,7 +181,7 @@ console.log(play);*/ // to see full array.
 
 function add(){
 
-    let result = 66; // local variable you can't use this out of the function. but you can use same variable in another function.
+    let result = 66; // local variable, you can't use this out of the function. but you can use same variable in another function.
     console.log(result);
 
 }
@@ -190,7 +190,7 @@ add();*/
 
 //immediately invoked function
 
-/*(function(){                    // use this for using less RAM and use this for short use. because function delete variable after function finish.
+/*(function(){                    // use this for using less RAM and use this for short use. because function delete after function finish.
     let hi = 'hello jatin';                  
     console.log( hi);
     alert( hi);
@@ -229,7 +229,7 @@ add();*/
 // let x = Math.round(5.8);
 // let y = Math.ceil(8.1);
 // let z = Math.floor(3.9);
-// let a = Math.pow(5,3);     //power of 5(find any number of power.)
+// let a = Math.pow(5,3);     //power of 5(find power of any number.)
 // let b = Math.sqrt(100);    //square root of any number.c
 // let c = Math.min(3,66,93,9,24,55,5,36,58,8,56,568,)  //find the minimum number of them.
 // let d = Math.max(3,66,93,9,24,55,5,36,58,8,56,568,)  //find the minimum number of them.
@@ -611,7 +611,7 @@ console.log(user.personalInfo.address); */
 //     console.log("Jatin is learning " + a);
 //     let c = "react.js";
 //     return function(b){
-//          return a+b+c           // using outer function output (a) here. Using (a) second time. and the access of a and c again called lexical scope.
+//          return a+b+c           // using outer function output (a) here. Using (a) second time. and has the access of a and c again, called lexical scope.
 //     }
 // }
 // let store = sum("javascript");
@@ -1205,7 +1205,7 @@ console.log(user.personalInfo.address); */
 // const calculate = (rad, logic) => {
 //   const output = [];
 //   for(let i = 0; i < rad.length; i++){
-//       output.push(logic(rad[i]))   // `rad[i]` refers to the element in the array `rad` at the index `i`. This value is the radius at the current iteration of the loop. basicaly i is index value
+//       output.push(logic(rad[i]))   // `rad[i]` refers to the element in the array `rad` at the index `i`. This value is the radius at the ent iteration of the loop. basicaly i is index value
 //   }
 //   console.log(output)
 // }
@@ -1558,3 +1558,100 @@ console.log(user.personalInfo.address); */
 // }
 // console.log(counts)
 
+
+// SLICE() METHOD - GET A SUBSET OF AN ARRAY FROM START INDEX TO END INDEX(END NOT INCLUDED)
+// const arr32 = (numb) => {
+//     const get = numb.slice(1,5);
+//     return get;
+// }
+// console.log(arr32([21,32,4,36,63,34,16,75,458,756]))
+
+// const arr33 = [21,32,4,36,63,34,16,75,458,756];
+// const s = arr33.slice(2,7);
+// console.log(s)
+
+
+// ARRAY DESTRUCTURING 
+// const fruits = ["apple", "banana", "mango"];
+// const [firstFruit, secondFruit, thirdFruit] = fruits;
+// console.log(firstFruit);
+// console.log(secondFruit);
+
+
+
+// FUNCTION CURRYING
+//Currying is a function programming technique that used to transform multiple arguments into sequence of nested functions and each function taking single argument.
+
+// const gotEmail = (to) => {
+//    return function(subject){
+//       return function(body){
+//        console.log(`hello, ${to} this is for ${subject}: we would gald to inform you that ${body}`)
+//       }
+//    }
+// }
+// const step1 = gotEmail("ja3singh99101@gmail.com");
+// const step2 = step1("Selection Confirmation");
+// step2("You got selected for delhi Under-23 Team as a Captain.")
+
+
+// const add = (a) => {
+//     return (b) => {
+//         return (c) => {
+//             console.log(a+b+c)
+//         }
+//     }
+// }
+// add(2)(4)(4)
+
+// Infinitee currying
+// const infi = (a) => {
+//     return (b) => {
+//         if(b){
+//             return infi(a+b)
+//         }
+//       return a;
+//     }
+   
+// }
+// console.log(infi(18)(23)(4)(5)())
+
+
+// An higher order function that return a function from it.
+// const add = (a,b) => {
+//     let result = a + b ;
+//     return function(){
+//         console.log(result)
+//     }
+// }
+// const returnFunc = add(3,12);
+// returnFunc()
+
+
+// FINDING LENGTH AFTER USING DELETE METHOD.
+// const arr11 = [{}, "2", "hello","ss","Sd", "8738g"];
+// delete arr11[3]
+// console.log(arr11)
+// console.log(arr11.length)  // whenever you try to delete element from an array, using delete method, the length of the array will be the same because delete method delete element but leave an empty slot in place of deleted element. that's why length will be same.
+
+
+// SPLICE MEHTOD
+// const arr12 = [24,26,89,24,"jatin",85];
+// const ad = arr12.splice(2,2,"virat");
+// console.log(ad)
+// console.log(arr12);
+
+
+// SLICE METHOD
+// const arr13 = [24,26,89,24,"jatin",85];
+// const ad = arr13.slice(2,4);
+// console.log(ad)
+// console.log(arr13);
+
+
+var name = "Jatin";
+let city = "New delhi";
+const age = 20
+
+console.log(window.name);
+console.log(window.city)
+console.log(window.age)

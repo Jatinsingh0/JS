@@ -474,42 +474,44 @@
   const debounceTag = document.querySelector(".d_count");
   let nrCnt = 0;
   let thtlCnt = 0;
-  let dbucCnt = 0;   
+  let dbucCnt = 0;  
   let isScrolling = true;
 
   const normalCount = () => {
     nrCnt++;
-    normalTag.innerHTML = `Normal Count: ${nrCnt}`
-  };
+    normalTag.innerHTML = `Normal count: ${nrCnt}`
+  }
 
   const throttleCount = () => {
-      if(isScrolling == true){
-        thtlCnt++
-         throttleTag.innerHTML = `Throttle Count: ${thtlCnt}`;
-         isScrolling = false;
-         setTimeout(()=> {
-          isScrolling = true;
-         }, 1000)
-      }
-  };
+    if(isScrolling == true){
+      thtlCnt++;
+      throttleTag.innerHTML = `Throttle count: ${thtlCnt}`;
+      isScrolling = false;
+      setTimeout(()=>{
+        isScrolling = true
+      }, 1000)
+    }
+  } -->
 
-  let interval;
-  const debounceCount = () => {
-     clearTimeout(interval);
 
+  <!-- DEBOUNCE -  If the function is called multiple times within the delay period(1000), only the action triggered by the last call will be executed after the delay.
+   let interval;
+   const debounceCount = () => {
+     clearTimeout(interval)
      interval = setTimeout(()=>{
-      dbucCnt++;
-      debounceTag.innerHTML = `Debounce Count: ${dbucCnt}`;
-     }, 1000);
-  };
+       dbucCnt++;
+       debounceTag.innerHTML = `Debounce count: ${dbucCnt}`;
+     }, 1000)
+   }
   
-  const showCount = () => {
-     normalCount();
-     throttleCount();
-     debounceCount();
-  };
-</script>
-</body> -->
+  
+   const showCount = () => {
+      normalCount();
+      throttleCount();
+      debounceCount();
+   };
+ </script>
+ </body> -->
 
 
 <!-- <button type="button" class="btn">click</button>
@@ -693,6 +695,7 @@
    
 </script> -->
  
+
 
 
 
