@@ -1,1 +1,1 @@
-This is just my javaScript Practice. That makes me a good developer.
+# This repository contains my JavaScript coding exercises and practice solutions. It includes key JavaScript concepts such as functions, objects, arrays, and more. The focus is on strengthening problem-solving skills, exploring functional programming, and deepening knowledge in modern JavaScript (ES6+).
