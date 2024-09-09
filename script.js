@@ -1648,10 +1648,16 @@ console.log(user.personalInfo.address); */
 // console.log(arr13);
 
 
-var name = "Jatin";
-let city = "New delhi";
-const age = 20
+// var name = "Jatin";
+// let city = "New delhi";
+// const age = 20
 
-console.log(window.name);
-console.log(window.city)
-console.log(window.age)
+// console.log(window.name);
+// console.log(window.city)
+// console.log(window.age)
+
+// const fruits = ['apple', 'banana', 'cherry'];
+// fruits.forEach((fruit, index) => {
+//   console.log(index, fruit);
+// });
+
