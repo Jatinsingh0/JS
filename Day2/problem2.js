@@ -1,5 +1,5 @@
 /**
- * Problem: Find the Largest Number in an Array
+ * Problem: Find the Largest Number in an Array.
  * -Return the largest number in an array.
 
 /**

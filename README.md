@@ -14,6 +14,13 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Count Occurrences of a Character.
   - Find the Average of Numbers in an Array.
 
+  ### [Day 2](./Day2)
+- Solved 4 JavaScript problems:
+  - Check if a String is a Palindrome.
+  - Find the Largest Number in an Array
+  - Convert Celsius to Fahrenheit.
+  - Sum All Numbers Between Two Values.
+
 
 
 ## 🌐 Connect with Me
