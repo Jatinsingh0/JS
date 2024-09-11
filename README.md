@@ -21,6 +21,12 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Convert Celsius to Fahrenheit.
   - Sum All Numbers Between Two Values.
 
+    ### [Day 3](./Day3)
+- Solved 3 JavaScript problems:
+  - Check if a String Contains a Substring.
+  - Count Vowels in a String.
+  - Capitalize the First Letter of Each Word
+
 
 
 ## 🌐 Connect with Me
