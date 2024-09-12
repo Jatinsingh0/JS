@@ -14,18 +14,24 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Count Occurrences of a Character.
   - Find the Average of Numbers in an Array.
 
-  ### [Day 2](./Day2)
+### [Day 2](./Day2)
 - Solved 4 JavaScript problems:
   - Check if a String is a Palindrome.
   - Find the Largest Number in an Array
   - Convert Celsius to Fahrenheit.
   - Sum All Numbers Between Two Values.
 
-    ### [Day 3](./Day3)
+### [Day 3](./Day3)
 - Solved 3 JavaScript problems:
   - Check if a String Contains a Substring.
   - Count Vowels in a String.
   - Capitalize the First Letter of Each Word
+
+### [Day 4](./Day4)
+- Solved 3 JavaScript problems:
+  - Remove Duplicates from an Array
+  - Find the Minimum Number in an Array
+  - Generate a Random Number Between Two Values
 
 
 
