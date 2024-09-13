@@ -33,6 +33,11 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Find the Minimum Number in an Array
   - Generate a Random Number Between Two Values
 
+### [Day 5](./Day5)
+- Solved 3 JavaScript problems:
+  - Find the First Non-Repeating Character in a String
+  - Check if a Number is Prime
+  - Find the sum of all elements in an array.
 
 
 ## 🌐 Connect with Me
