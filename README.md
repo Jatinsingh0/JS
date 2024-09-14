@@ -36,8 +36,14 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
 ### [Day 5](./Day5)
 - Solved 3 JavaScript problems:
   - Find the First Non-Repeating Character in a String
-  - Check if a Number is Prime
+  - Count the Number of Words in a String.
   - Find the sum of all elements in an array.
+
+### [Day 6](./Day6)
+- Solved 3 JavaScript problems:
+  - Merge Two Sorted Arrays.
+  - Flatten a Nested Array
+  - Find the Missing Number in a Sequence
 
 
 ## 🌐 Connect with Me
