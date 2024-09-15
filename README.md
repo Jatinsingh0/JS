@@ -45,6 +45,11 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Flatten a Nested Array
   - Find the Missing Number in a Sequence
 
+### [Day 7](./Day7)
+- Solved 2 JavaScript problems:
+  - Sort an Array of Strings Alphabetically.
+  - Find Unique Elements in an Array
+
 
 ## 🌐 Connect with Me
 Follow my journey on [LinkedIn](https://www.linkedin.com/in/jatin-singh-a9147526b/) and [Twitter](https://x.com/jatinSingh012) as I continue to grow as a developer. Your feedback and support are always welcome!
