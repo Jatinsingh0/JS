@@ -50,6 +50,10 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Sort an Array of Strings Alphabetically.
   - Find Unique Elements in an Array
 
+### [Day 8](./Day8)
+- Solved 2 JavaScript problems:
+  - Remove All Falsy Values from an Array.
+  - Find the Longest Word in a String
 
 ## 🌐 Connect with Me
 Follow my journey on [LinkedIn](https://www.linkedin.com/in/jatin-singh-a9147526b/) and [Twitter](https://x.com/jatinSingh012) as I continue to grow as a developer. Your feedback and support are always welcome!
