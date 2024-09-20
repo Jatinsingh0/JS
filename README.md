@@ -59,5 +59,9 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
 - Solved 1 JavaScript problems:
   - Create a Frequency Counter for Characters in a String.
 
+### [Day 10](./Day10)
+- Solved 1 JavaScript problems:
+  - Generate a Random String of Given Length.
+
 ## 🌐 Connect with Me
 Follow my journey on [LinkedIn](https://www.linkedin.com/in/jatin-singh-a9147526b/) and [Twitter](https://x.com/jatinSingh012) as I continue to grow as a developer. Your feedback and support are always welcome!
