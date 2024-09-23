@@ -63,5 +63,10 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
 - Solved 1 JavaScript problems:
   - Generate a Random String of Given Length.
 
+### [Day 11](./Day11)
+- Solved 2 JavaScript problems:
+  - Replace all instances of a specific character in a string with another character.
+  - Find common elements in multiple arrays.
+
 ## 🌐 Connect with Me
 Follow my journey on [LinkedIn](https://www.linkedin.com/in/jatin-singh-a9147526b/) and [Twitter](https://x.com/jatinSingh012) as I continue to grow as a developer. Your feedback and support are always welcome!
