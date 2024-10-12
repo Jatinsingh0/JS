@@ -68,7 +68,7 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
   - Replace all instances of a specific character in a string with another character.
   - Find common elements in multiple arrays.
 
-### [Day 11](./Day11)
+### [Day 12](./Day12)
 - Solved 1 JavaScript problems:
   - Throttle Function Implementation
 
