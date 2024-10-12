@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throttling</title>
+    <style>
+      body {
+        height: 5003px;
+      }
+    </style>
+  </head>
+  
+  <!-- Problem: Throttle Function Implementation -->
+  <body onscroll="showCount()">
+    <p>Normal count</p>
+    <p class="normalCount"></p>
+    <p>Throttle count</p>
+    <p class="throttleCount"></p>
+
+    <script>
+      let normalTag = document.querySelector(".normalCount");
+      let throttleTag = document.querySelector(".throttleCount");
+
+      let normal_Count = 0;
+      let throttle_Count = 0;
+      let isScrolling = true;
+
+      const normalCount = () => {
+        normal_Count++;
+        normalTag.innerHTML = `: ${normal_Count}`;
+      };
+
+      const throttleCount = () => {
+        if (isScrolling == true) {
+          throttle_Count++;
+          throttleTag.innerHTML = `: ${throttle_Count}`;
+          isScrolling = false;
+          setTimeout(() => {
+          isScrolling = true
+        }, 1000)
+        }
+      };
+      
+      const showCount = () => {
+        normalCount();
+        throttleCount();
+      };
+    </script>
+  </body>
+</html>
