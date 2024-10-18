@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing</title>
+    <style>
+      body {
+        height: 5000px;
+      }
+    </style>
+  </head>
+
+  <!-- Debounce Function Implementation -->
+  <body onscroll="showCount()">
+    <p>Normal count</p>
+    <p class="normalCount"></p>
+    <p>Debounce count</p>
+    <p class="DebounceCount"></p>
+
+    <script>
+      let normalTag = document.querySelector(".normalCount");
+      let DebounceTag = document.querySelector(".DebounceCount");
+
+      let normal_Count = 0;
+      let Debounce_Count = 0;
+      let isScrolling = true;
+
+      const normalCount = () => {
+        normal_Count++;
+        normalTag.innerHTML = `: ${normal_Count}`;
+      };
+
+      let interval;
+      // If interval was declared inside the DebounceCount function, every time DebounceCount is called, it would create a new interval variable scoped to that function call, and you wouldn't be able to clear the previous timeout.
+      const DebounceCount = () => {
+        clearTimeout(interval);
+        interval = setTimeout(() => {
+          Debounce_Count++;
+          DebounceTag.innerHTML = `: ${Debounce_Count}`;
+        }, 1000);
+      };
+
+      const showCount = () => {
+        normalCount();
+        DebounceCount();
+      };
+    </script>
+  </body>
+</html>
