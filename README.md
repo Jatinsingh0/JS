@@ -76,5 +76,9 @@ Each day, I'll tackle a set of JavaScript problems to enhance my understanding o
 - Solved 1 JavaScript problems:
   - Debounce Function Implementation
 
+### [Day 14](./Day14)
+- Solved 1 JavaScript problems:
+  - Create a Simple Promise Implementation
+
 ## 🌐 Connect with Me
 Follow my journey on [LinkedIn](https://www.linkedin.com/in/jatin-singh-a9147526b/) and [Twitter](https://x.com/jatinSingh012) as I continue to grow as a developer. Your feedback and support are always welcome!
