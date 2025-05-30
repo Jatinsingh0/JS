@@ -41,6 +41,7 @@
 //     counter++;
 // }
 
+
 // for loop
 
 // for(let counter = 1; counter <= 10; counter++ ){
@@ -175,6 +176,7 @@ console.log(play);*/ // to see full array.
 
 //  add(4,7,7);     // for any number of digit.
 
+
 //global and local variable
 
 /*let u = 'jatin';  // gloable variable - you can use it anywhere. but you can't use same variable second time.
@@ -217,11 +219,11 @@ add();*/
 // };
 
 // let car ={
-//     brand: "wollsvogn",
+//     brand: "volkswagen",
 //     model: 'buggati'
 
 // }
-
+   
 // person.sayHello()
 
 // math object
@@ -303,7 +305,7 @@ console.log(user.personalInfo.address); */
 
 // if else
 
-// let age = 18;           //user type his/her age & hasvoterid then page respond according to conditions written down bwlow.
+// let age = 18;           //user type his/her age & hasvoterid then page respond according to conditions written down below.
 // let hasvoterid = "yes"
 
 // if(age >= 18 && hasvoterid == 'yes'){
@@ -322,37 +324,40 @@ console.log(user.personalInfo.address); */
 
 // PRACTICE LOCAL STORAGE
 
+// Add data in local Storage.
+
 // let nam = prompt("write your name.");
 // let age = prompt("your age please.")
-
 // localStorage.setItem(nam, age);
+
+// if you want to delete any specific data from localstorage, you can use removeItem()method.
+
+// let deleteData = prompt("Enter the name to remove from local Storage");
+// if(localStorage.getItem(deleteData) == null){
+//     alert(`${deleteData} not found!`)
+// }else{
+//     localStorage.removeItem(deleteData)
+//     alert(`${deleteData} has been successfuly deleted from local Storage!`)
+//}
+
+// Use this If you want to clear AllData from localStorage.
+// localStorage.clear()            
+
 
 // Learning SWITCH STATEMENT.
 
-// let input = "y";
+// let state = "RCB"
 
-// switch(input){
-//     case 1:
-//         document.write("continue")
-//         break;
-
-//     case "y":
-//         document.write("continue")
-//         break;
-
-//     case "yes":
-//         document.write("continue")
-//         break;
-
-//      case 0:
-//      case "n":
-//      case "no":
-//          document.write("End")
-//          break;
-
-//     default:
-//         document.write("wrong input")
+// switch(state){
+//  case "virat" : document.write("virat is a King.")
+//  break;
+//  case "Jatin" : document.write("Jatin is a greatest batsman of all time.")
+//  break;
+//  case "RCB" : document.write("doesn't matter what, always RCB!")
+//  break;
+//  default : document.write("wrong input") 
 // }
+
 
 // Argument object
 // function add(){
@@ -384,6 +389,7 @@ console.log(user.personalInfo.address); */
 //     return value * 2
 // })
 // console.log(arr1);
+
 
 // FILTER FUNCTION
 
@@ -478,31 +484,32 @@ console.log(user.personalInfo.address); */
 
 // FETCH API and  TRY & CATCH METHOD
 
-// async function  perform(){
-// try {
-//     const res = await fetch("https://api.covid19api.com/summary");
-//     const data = await res.json();
-//     console.log(data.Countries[100 ].Country)
-// } catch (error) {
-//     console.log("error")
+// If you want to send data to an API, convert an object to JSON using JSON.stringify():
+
+// If you get this JSON from an API, use JSON.parse() to convert it into a JavaScript
+
+// const perform = async() => {
+// try{
+//  // fetch() returns a Promise that resolves to a Response object.
+// // This (Response) object contains metadata (like status, headers, etc.) and the actual response body.
+//  const response = await fetch("https://jsonplaceholder.typicode.com/users");
+// //response.json() is a method that reads the response body and parses it as JSON.
+// // The result is stored in data, which is now a JavaScript object.
+//  const data = await response.json();
+//  console.log(data)
+// }catch(err){
+// console.log("Error:", err)
 // }
 // }
 // perform();
 
-// LOCAL STORAGE
-
-// localStorage.setItem("jatin", "cricketer")
-
-// let k = "virat"
-// let v = "king"
-
-// localStorage.setItem(k,v)
 
 // DESTRUCTURING & SPREAD OPERATOR
 
 // let arr = [3,6,9];
-// let [a,b,c] = arr;
+// let [a,b,c] = arr;   // Array Destructuring is happening here. This means that the values of arr are assigned to individual variables a, b, and c.
 // console.log(a,b,c);
+
 
 // let arr = [1,2,3,4];
 // let arr2 = [...arr,5,6,7]
@@ -521,6 +528,7 @@ console.log(user.personalInfo.address); */
 //     county: "india",
 // }
 // console.log({...ex, name: "JATIN"});  //you must have to use the spread operator before the changes
+
 
 // LEARN JSON
 
@@ -557,8 +565,7 @@ console.log(user.personalInfo.address); */
 // let arr2 = num.map((val)=>{
 //      return val.name;
 // })
-
-// let arr1 = document.getElementById("map").innerHTML = arr2 ;
+// console.log(arr2)
 
 // FILTER FUNCTION
 
@@ -614,8 +621,9 @@ console.log(user.personalInfo.address); */
 //          return a+b+c           // using outer function output (a) here. Using (a) second time. and has the access of a and c again, called lexical scope.
 //     }
 // }
-// let store = sum("javascript");
+// let store = sum("javascript");   //Now store holds the returned function
 // console.log(store("next.js"));
+
 
 // Example 2
 
@@ -642,7 +650,7 @@ console.log(user.personalInfo.address); */
 
 // function callApi(method){
 //     return function(url){
-//         console.log(`we are using ${method} and fetching ${url}`);
+//         console.log(`we are using ${method} method and fetching ${url}`);
 //     }
 //   }
 //   const store = callApi("GET");
@@ -675,7 +683,7 @@ console.log(user.personalInfo.address); */
 
 // CALL, APPLY, BIND
 
-// CALL: we have just made one function and we we are calling that function with different object. Just with the help of CALL keyWord.
+// CALL: we have just made one function and we are calling that function with different object. Just with the help of CALL keyWord.
 // const user1 = {
 //   name: "Jatin",
 //   proffession: "software developer",
@@ -698,7 +706,7 @@ console.log(user.personalInfo.address); */
 // print.call(user2, "Delhi", "India", "callMethod");
 
 // // APPLY: you can use many arguments as an array list. but You must have to use Array list in Apply method otherwise method shows you error.
-// print.apply(user2, ["Delhi", "India", "applyMethod"]);
+// print.apply(user1, ["Delhi", "India", "applyMethod"]);
 
 // // BIND : bind is same as call but here you just have to make a copy the result and invoke later.
 // let newFun = print.bind(user2, "Delhi", "India", "BindMethod");
@@ -726,14 +734,20 @@ console.log(user.personalInfo.address); */
 
 // console.log("sixth line");
 
-// setInterval(function(){
+// let interval1 = setInterval(function(){
 //     console.log("I'm setInterval")
 // },1000)
 
 // let setinter = function(i){
 //     console.log("function for setInterval" + i)
 // };
-// setInterval(setinter , 1000, 3);
+// let interval2 = setInterval(setinter , 1000, 3);
+// setTimeout(function(){
+//     clearInterval(interval1); // Stops first interval
+//     clearInterval(interval2); // Stops second interval
+//     console.log("setInterval stopped!");
+// }, 5000);
+
 
 // FUNCTIONAL Programming
 
@@ -854,7 +868,7 @@ console.log(user.personalInfo.address); */
 // Find duplicate numbers ?
 
 // const arry = [1,2,3,4,5,2,4,6,7,8,9,6,7];
-// const findDuplicate = arry.filter((value,index,array) => array.indexOf(value) !== index);
+// const findDuplicate = arry.filter((value,index) => arry.indexOf(value) !== index);
 // console.log(findDuplicate);
 
 // Find the MAX and Min value in array ?
@@ -900,7 +914,7 @@ console.log(user.personalInfo.address); */
 //      const maxNum = Math.max(...curVal);
 //      const minNum = Math.min(...curVal);
 //      for(let i = minNum; i<maxNum; i++){
-//         if(curVal.indexOf(i) < 0){            //when indexOf not able to find the (i) in curVal it returns -1 and -1 is smaller than 0. and then the condition becomes true.
+//         if(curVal.indexOf(i) < 0){            //when indexOf not able to find the (i) in curVal it returns -1. And -1 is smaller than 0. and then the condition becomes true.
 //             missNum.push(i);
 //         }
 //      }
@@ -1034,17 +1048,16 @@ console.log(user.personalInfo.address); */
 
 // how many times a letter occurence in a string;
 
-// let str101 = prompt("enter a string");
-// let ltr = prompt("find a letter")
-// let counter = 0;
-// const strlnth = str101.length;
-
-// for(let i = 0; i<= strlnth; i++){
-//     if(str101[i] == ltr){
-//        counter++
-//     }
+// const str = (word, find) => {
+//     let count = 0
+//   for(let i =0; i<= word.length; i++){
+//      if(word[i] === find){
+//         count++
+//      }
+//   }
+//   console.log(count)
 // }
-// console.log(counter);
+// str("viratiuegiwhfijehfoqhefKohli", "i")
 
 // TABLE FOR ANY NUMBER
 
@@ -1223,6 +1236,7 @@ console.log(user.personalInfo.address); */
 //   console.log(mn, "this is a callback function")
 // }
 // xyz(2,3, ab);
+
 
 // Infinite currying.
 
@@ -1660,4 +1674,50 @@ console.log(user.personalInfo.address); */
 // fruits.forEach((fruit, index) => {
 //   console.log(index, fruit);
 // });
+
+
+
+// Understanding the Output of the Code
+// function abc(){
+//     console.log(abc.xyz)
+// }
+
+// At this point, abc.xyz is undefined because no property xyz has been assigned to abc yet.
+// abc()           // undefined
+// abc.xyz = 400; → The property xyz is now 400.
+// abc.xyz = 200; → The property xyz is now updated to 200.
+// Now, abc.xyz has a value (200), so when console.log(abc.xyz) runs, it prints 200.
+// abc()           //200
+
+// Functions in JavaScript are objects, meaning you can assign properties to them like any other object.
+// If a property doesn’t exist, accessing it returns undefined.
+
+
+// What will be the output?
+// const arr = [..."Jatin"];
+// console.log(arr)          // ["J", "a", "t", "i", "n"]
+// The spread operator (...) splits an iterable into individual elements.  
+
+
+
+// 💼 Real-world Scenario:
+// Imagine you’re building a dynamic quiz app, and you render multiple choice options. You want each button to show an alert with its respective option when clicked.
+
+// Without closures, all buttons would alert the same value (usually the last one).
+
+// Fix it using let or an IIFE:
+
+// for(var i=0; i<3; i++){
+//   (function(j){           // using IIFE
+//   let button = document.createElement("button");
+//   button.innerText = `option ${j}`;
+
+//   button.onclick = (()=>{
+//     alert(`you clicked option ${j}`);
+//   })
+  
+//   document.body.appendChild(button)
+//   }(i));
+// }
+
 

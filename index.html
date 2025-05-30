@@ -696,6 +696,31 @@
 </script> -->
  
 
+<!-- What is Event Delegation? -->
+ <!-- Event delegation is a technique where you attach a single event listener to a common parent element, instead of each individual child. -->
+
+<ul id="list">
+  <!-- <li>item 1</li>
+  <li>item 2</li>
+</ul>
+<button type="button" id="add">Add new item</button>
+
+<script>
+  const list = document.getElementById("list");
+  const addBtn = document.getElementById("add");
+
+  addBtn.addEventListener("click", ()=>{
+    const newItem = document.createElement("li");
+    newItem.innerText = `item ${list.children.length + 1}`;
+    list.appendChild(newItem);
+  })
+
+  list.addEventListener('click', (e) => {
+  if (e.target.tagName === 'LI') {          //tagName always returns uppercase tag names
+    alert(`You clicked on ${e.target.textContent}`);
+  }
+});
+</script> -->
 
 
 

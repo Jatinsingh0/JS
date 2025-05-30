@@ -1,6 +1,6 @@
 /**
  * Problem: Create a Simple Promise Implementation
- - Implement a basic version of a Promise with then and catch and Async/Await.
+ - Implement a basic version of a Promise with then and catch and Async/Await .
  */
 
 // Code...

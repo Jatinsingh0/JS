@@ -8,9 +8,9 @@
 
 // Code...
 
-const str = "Jatin Singh is good boy";
+const str = "Jatin";
 const numberOfWords = (word) =>{
-    const split = word.split(" ")
+    const split = word.split("")
     return split.length;
 }
 console.log(numberOfWords(str))
